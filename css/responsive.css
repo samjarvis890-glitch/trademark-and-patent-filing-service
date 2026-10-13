@@ -1,0 +1,1827 @@
+/* ==========================================================================
+   IPFORGE — RESPONSIVE STYLES
+   Breakpoints: 1200px, 992px, 768px, 576px, 390px, 320px
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Tablet Viewports & Compact Screens (<= 1280px)
+   Per Rule: Tablet (768px - 1280px) Logo | Dark | RTL | Hamburger
+   -------------------------------------------------------------------------- */
+@media (max-width: 1280px) {
+  :root {
+    --container-padding-x: 24px;
+    --section-padding-y: 84px;
+    --header-height: 84px;
+  }
+
+  /* Sticky Navbar on tablet & mobile */
+  .site-header {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    z-index: 1000 !important;
+  }
+
+  /* Header navigation inside hamburger menu bar for all tablet viewports */
+  .header-nav {
+    display: none !important;
+  }
+
+  .mobile-menu-toggle {
+    display: flex !important;
+  }
+
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .header-actions .btn {
+    display: none !important;
+  }
+
+  .utility-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .utility-btn,
+  .utility-controls .direction-toggle {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1.2fr 1fr 1fr 1fr;
+    gap: 36px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Tablet & Landscape Tablet Content Layouts (<= 1024px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .intro-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .intro-left {
+    max-width: 640px;
+  }
+
+  .services-header-wrapper {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .services-visual-banner {
+    height: 180px;
+  }
+
+  .precision-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .scenarios-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .consultation-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .consultation-right {
+    min-height: 320px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Tablet (<= 820px / 768px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 820px) {
+  /* Process Timeline turns vertical */
+  .process-intro-row {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .process-image-preview {
+    height: 200px;
+  }
+
+  .process-timeline {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding-left: 28px;
+    padding-top: 0;
+  }
+
+  .process-timeline::before {
+    top: 14px;
+    bottom: 14px;
+    left: 12px;
+    right: auto;
+    width: 2px;
+    height: auto;
+  }
+
+  .process-node {
+    padding-left: 18px;
+  }
+
+  .process-node-indicator {
+    position: absolute;
+    left: -28px;
+    top: 0;
+    margin-bottom: 0;
+  }
+
+  /* Footer Tablet Layout: 2 columns x 2 rows */
+  .footer-top {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Mobile (<= 576px / 480px / 390px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 576px) {
+  :root {
+    --container-padding-x: 20px;
+    --section-padding-y: 68px;
+    --header-height: 78px;
+  }
+
+  .header-logo img,
+  .header-logo svg {
+    width: 140px;
+  }
+
+  .header-actions {
+    gap: 8px;
+  }
+
+  .utility-controls {
+    gap: 6px;
+  }
+
+  .utility-btn,
+  .utility-controls .direction-toggle {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    min-height: 38px;
+  }
+
+  .utility-btn svg,
+  .utility-controls .direction-toggle svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .mobile-menu-toggle {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    min-height: 38px;
+  }
+
+  .header-actions .btn {
+    display: none;
+  }
+
+  .hero-section {
+    padding-top: 36px;
+    padding-bottom: 56px;
+    min-height: auto;
+  }
+
+  .hero-title {
+    font-size: 2.25rem;
+    margin-bottom: 18px;
+  }
+
+  .hero-desc {
+    font-size: 1rem;
+    margin-bottom: 28px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .hero-badge {
+    bottom: 16px;
+    left: 16px;
+    padding: 8px 12px;
+    font-size: 0.6875rem;
+  }
+
+  /* Section 02 Intro */
+  .numbered-item {
+    flex-direction: column;
+    gap: 12px;
+    padding: 18px 20px;
+  }
+
+  /* Section 03 Services */
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .service-card {
+    padding: 26px 22px;
+  }
+
+  /* Section 05 Precision */
+  .precision-point {
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px 18px;
+  }
+
+  /* Section 07 Consultation */
+  .consultation-left {
+    padding: 44px 24px;
+  }
+
+  .consultation-actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .consultation-actions .btn {
+    width: 100%;
+  }
+
+  .consultation-right {
+    min-height: 240px;
+  }
+
+  /* Section 08 Final */
+  .final-statement-card {
+    padding: 48px 24px;
+  }
+
+  /* Footer Mobile Layout: 1 column */
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .footer-legal-links {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  /* Modal Mobile */
+  .modal-window {
+    padding: 30px 20px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Ultra Compact Mobile (<= 360px / 320px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 360px) {
+  :root {
+    --container-padding-x: 16px;
+  }
+
+  .hero-title {
+    font-size: 1.95rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+}
+
+/* ==========================================================================
+   HOME 2: RESPONSIVE ADAPTATIONS
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .hero-strategy {
+    min-height: 680px;
+    height: auto;
+  }
+
+  .ip-value-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .ip-value-image-frame img {
+    aspect-ratio: 16/9;
+  }
+
+  .growth-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .growth-media-frame img {
+    height: 380px;
+  }
+}
+
+@media (max-width: 820px) {
+  .hero-strategy {
+    min-height: 640px;
+    padding-top: 60px;
+  }
+
+  .hero-strategy-headline {
+    font-size: clamp(2.4rem, 6vw, 3.4rem);
+  }
+
+  .split-panels-wrapper {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .split-panel {
+    padding: 36px 28px;
+  }
+
+  .portfolio-asymmetric-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .portfolio-feature-block {
+    padding: 36px 28px;
+  }
+
+  .preparation-stages-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .preparation-hero-banner img {
+    height: 280px;
+  }
+
+  /* Matrix Responsive: Convert to stacked rows */
+  .matrix-thead-row {
+    display: none;
+  }
+
+  .matrix-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 24px 18px;
+    background-color: var(--color-warm-white);
+    margin-bottom: 12px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+  }
+
+  .matrix-cell-q {
+    font-size: 1rem;
+    margin-bottom: 4px;
+  }
+
+  .matrix-cell-reveal, .matrix-cell-matter {
+    padding-left: 20px;
+  }
+
+  .matrix-mobile-label {
+    display: block;
+  }
+
+  /* Myth / Reality Responsive */
+  .myth-header-btn {
+    grid-template-columns: 36px 1fr 32px;
+    gap: 14px;
+    padding: 22px 16px;
+  }
+
+  .myth-reality-body {
+    padding: 0 16px 24px 50px;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .consultation-panel-card {
+    padding: 56px 28px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-strategy {
+    min-height: 580px;
+  }
+
+  .hero-strategy-headline {
+    font-size: clamp(2rem, 8vw, 2.75rem);
+  }
+
+  .hero-strategy-ctas {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-hero-primary, .btn-hero-secondary {
+    width: 100%;
+  }
+
+  .split-panel-visual img {
+    height: 180px;
+  }
+
+  .portfolio-feature-media img {
+    height: 180px;
+  }
+
+  .growth-statement-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .consultation-panel-card {
+    padding: 40px 20px;
+  }
+
+  .consultation-panel-actions .btn {
+    width: 100%;
+  }
+
+  .editorial-statement-inner {
+    padding: 48px 16px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   ABOUT PAGE — RESPONSIVE ADAPTATIONS
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 1024px) {
+  .about-hero-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .origin-grid {
+    grid-template-columns: 200px 1fr;
+    gap: 40px;
+  }
+
+  .approach-sequence-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .approach-stage:nth-child(2) {
+    border-right: none;
+  }
+
+  .approach-stage:nth-child(1),
+  .approach-stage:nth-child(2) {
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .collab-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .audience-grid {
+    grid-template-columns: 1fr 1.2fr;
+    gap: 48px;
+  }
+
+  .clarity-composition {
+    grid-template-columns: 50% 50%;
+  }
+
+  .clarity-overlap-panel {
+    margin-left: -8%;
+    padding: 32px;
+  }
+
+  .value-band-row {
+    grid-template-columns: 60px 180px 1fr 30px;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 820px) {
+  .about-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .about-hero-right {
+    align-items: center;
+    width: 100%;
+  }
+
+  .about-hero-media-wrapper {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .origin-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .origin-oversized-num {
+    margin-bottom: 8px;
+  }
+
+  .collab-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .collab-media-frame {
+    order: -1;
+    max-width: 580px;
+    margin: 0 auto;
+  }
+
+  .audience-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .audience-left {
+    position: static;
+  }
+
+  .clarity-composition {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .clarity-image-frame {
+    margin-bottom: -24px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .clarity-overlap-panel {
+    margin-left: 0;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 32px 24px;
+  }
+
+  .value-band-row {
+    grid-template-columns: 48px 150px 1fr;
+  }
+
+  .value-band-arrow {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .approach-sequence-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .approach-stage {
+    border-right: none;
+    border-bottom: 1px solid var(--color-border);
+    padding: 32px 16px;
+  }
+
+  .approach-stage:last-child {
+    border-bottom: none;
+  }
+
+  .value-band-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 24px 8px;
+  }
+
+  .value-band-num {
+    font-size: 1rem;
+    color: var(--color-secondary);
+  }
+
+  .value-band-title {
+    font-size: 1.25rem;
+  }
+
+  .value-band-desc {
+    font-size: 0.9375rem;
+  }
+
+  .about-cta-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .about-cta-actions .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero-title {
+    font-size: 2.125rem;
+  }
+
+  .about-hero-meta-strip {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .manifesto-word-row {
+    padding: 16px 0;
+  }
+
+  .manifesto-word {
+    font-size: 1.625rem;
+  }
+
+  .collab-statement-item {
+    font-size: 1.125rem;
+  }
+
+  .audience-list-item {
+    gap: 16px;
+    padding: 24px 8px;
+  }
+
+  .audience-item-title {
+    font-size: 1.125rem;
+  }
+
+  .clarity-overlap-panel {
+    padding: 24px 16px;
+  }
+
+  .promise-heading {
+    font-size: 2.125rem;
+  }
+}
+
+/* ==========================================================================
+   Services Page Responsive Overrides
+   ========================================================================== */
+@media (max-width: 992px) {
+  .trademark-editorial-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .trademark-media-frame {
+    aspect-ratio: 16 / 10;
+    max-height: 480px;
+  }
+
+  .patent-asymmetric-wrapper {
+    flex-direction: column;
+    min-height: auto;
+    gap: 32px;
+  }
+
+  .patent-image-frame {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+  }
+
+  .patent-overlay-panel {
+    position: static;
+    width: 100%;
+    max-width: none;
+    padding: 36px 28px;
+  }
+
+  .services-search-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .search-vertical-media {
+    order: -1;
+    aspect-ratio: 16 / 10;
+    max-height: 420px;
+  }
+
+  .journey-columns-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .services-cta-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .services-hero-banner-wrapper {
+    aspect-ratio: 16 / 9;
+  }
+
+  .search-table-row {
+    grid-template-columns: 50px 1fr 24px;
+    gap: 16px;
+    padding: 24px 8px;
+  }
+
+  .journey-image-banner-wrapper {
+    aspect-ratio: 16 / 8;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-hero-title {
+    font-size: 2.125rem;
+  }
+
+  .services-hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .services-hero-actions .btn {
+    width: 100%;
+  }
+
+  .services-hero-floating-badge {
+    position: static;
+    display: inline-block;
+    margin-top: 12px;
+  }
+
+  .search-table-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .search-row-arrow {
+    display: none;
+  }
+
+  .trademark-service-line {
+    padding: 16px 0;
+  }
+
+  .services-cta-heading {
+    font-size: 2.125rem;
+  }
+}
+
+/* ==========================================================================
+   Process Page Responsive Rules
+   ========================================================================== */
+@media (max-width: 992px) {
+  .process-hero-statement-row {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .process-clarity-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .process-stages-flow {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .process-filing-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .process-role-groups-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .process-final-cta-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .process-hero-banner-wrapper {
+    aspect-ratio: 16 / 10;
+  }
+
+  .process-acc-trigger {
+    padding: 18px 20px;
+    gap: 14px;
+  }
+
+  .process-acc-body {
+    padding: 0 20px 20px 48px;
+  }
+
+  .process-acc-header-left {
+    gap: 14px;
+  }
+
+  .process-filing-media {
+    aspect-ratio: 16 / 10;
+  }
+}
+
+@media (max-width: 480px) {
+  .process-hero-title {
+    font-size: 2.125rem;
+  }
+
+  .process-flow-badge-strip {
+    font-size: 0.75rem;
+    padding: 12px 16px;
+    line-height: 1.6;
+  }
+
+  .process-final-cta-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ==========================================================================
+   Scenarios Page Responsive Rules
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .brand-scenario-layout {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .brand-media-frame {
+    min-height: 340px;
+    max-height: 440px;
+  }
+
+  .change-scenario-wrapper {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .change-media-sidebar {
+    position: static;
+    top: auto;
+  }
+
+  .next-steps-choices-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 992px) {
+  .scenarios-hero-sub-statement-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .technical-stages-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .growth-asymmetric-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .scenarios-final-statement-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .scenarios-hero-banner-wrapper {
+    aspect-ratio: 16 / 10;
+  }
+
+  .technical-stages-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .brand-editorial-panel {
+    padding: 22px 20px;
+  }
+
+  .growth-card {
+    padding: 24px 20px;
+  }
+
+  .change-selector-card {
+    padding: 20px 18px;
+  }
+
+  .scenario-choice-card {
+    padding: 24px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .scenarios-hero-title {
+    font-size: 2.125rem;
+  }
+
+  .scenarios-final-statement-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ==========================================================================
+   Contact Page Responsive Rules
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .contact-form-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-instruction-col {
+    position: static;
+  }
+
+  .intake-layout-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .intake-vertical-indicator {
+    position: static;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 8px;
+  }
+
+  .intake-sheet-row {
+    grid-template-columns: 50px 170px 1fr;
+    gap: 16px;
+  }
+
+  .intake-row-prompt {
+    display: none;
+  }
+
+  .channel-row {
+    grid-template-columns: 50px 170px 1fr auto;
+    gap: 16px;
+  }
+
+  .contact-map-layout {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .closing-checklist-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-card {
+    padding: 24px 20px;
+  }
+
+  .intake-sheet-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 24px 20px;
+  }
+
+  .channel-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 24px 20px;
+  }
+
+  .channel-row-action {
+    justify-content: flex-start;
+    text-align: left;
+    margin-top: 8px;
+  }
+
+  .closing-checklist-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .closing-statement-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-intro-title {
+    font-size: 2.125rem;
+  }
+
+  .contact-typographic-index {
+    gap: 16px;
+  }
+
+  .contact-index-numeral {
+    font-size: 2.5rem;
+  }
+
+  .contact-map-frame {
+    min-height: 360px;
+  }
+
+  #contactMap {
+    min-height: 360px;
+  }
+
+  .contact-submit-btn {
+    width: 100%;
+  }
+
+  .closing-action-primary {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ==========================================================================
+   COMPREHENSIVE ALL-PAGES MOBILE & TABLET RESPONSIVE ALIGNMENT SYSTEM
+   Breakpoints: Tablet (<= 991.98px / 820px / 768px), Mobile (<= 576px),
+   Narrow Mobile (<= 480px), Compact Mobile (<= 360px / 320px)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   01. Global Container & Layout Protection (Tablet & Mobile <= 1280px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1280px) {
+  /* Prevent any container or element from causing viewport horizontal overflow without breaking position: sticky */
+  body, html {
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  /* Responsive image containment */
+  img, svg, picture, video, canvas {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Headings & long words wrap cleanly */
+  h1, h2, h3, h4, h5, h6,
+  .hero-title, .hero-strategy-headline, .section-title,
+  .matrix-heading, .editorial-huge-statement {
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  /* ------------------------------------------------------------------------
+     Section Heading Alignment Rule: Center editorial headers on Tablet & Mobile (<= 1280px)
+     ------------------------------------------------------------------------ */
+  /* Index Page */
+  .hero-content,
+  .section-header,
+  .intro-left,
+  .services-header-wrapper,
+  .services-header-left,
+  .process-intro-row,
+  .process-intro-content,
+  .precision-content,
+  .consultation-left,
+  .final-statement-content {
+    text-align: center;
+    margin-inline: auto;
+    align-items: center;
+  }
+
+  .hero-eyebrow,
+  .hero-title,
+  .hero-desc,
+  .section-header .section-eyebrow,
+  .section-header .section-title,
+  .section-header .section-lead,
+  .intro-eyebrow,
+  .intro-heading,
+  .intro-lead,
+  .precision-eyebrow,
+  .precision-title,
+  .precision-lead,
+  .consultation-heading,
+  .consultation-desc,
+  .final-statement-heading,
+  .final-statement-lead {
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  /* Home 2 Page */
+  .hero-strategy-content,
+  .ip-value-content,
+  .matrix-header-group,
+  .portfolio-header,
+  .preparation-header,
+  .myth-header,
+  .consultation-panel-inner,
+  .editorial-statement-inner {
+    text-align: center;
+    margin-inline: auto;
+    align-items: center;
+  }
+
+  .hero-strategy-eyebrow,
+  .hero-strategy-headline,
+  .hero-strategy-desc,
+  .ip-value-eyebrow,
+  .ip-value-headline,
+  .ip-value-lead,
+  .matrix-eyebrow,
+  .matrix-heading,
+  .matrix-subtext,
+  .portfolio-eyebrow,
+  .portfolio-heading,
+  .portfolio-subtext,
+  .preparation-eyebrow,
+  .preparation-heading,
+  .preparation-subtext,
+  .myth-eyebrow,
+  .myth-heading,
+  .consultation-panel-eyebrow,
+  .consultation-panel-heading,
+  .consultation-panel-desc,
+  .editorial-huge-statement,
+  .editorial-subtext {
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  /* About Page */
+  .about-hero-left,
+  .origin-left,
+  .origin-right,
+  .clarity-overlap-panel,
+  .manifesto-header,
+  .approach-header-row,
+  .collab-left,
+  .audience-left,
+  .value-band-header,
+  .promise-container,
+  .about-cta-container {
+    text-align: center;
+    margin-inline: auto;
+    align-items: center;
+  }
+
+  .about-hero-eyebrow,
+  .about-hero-title,
+  .about-hero-desc,
+  .origin-left-label,
+  .origin-heading,
+  .origin-paragraphs,
+  .origin-p,
+  .clarity-heading,
+  .clarity-lead,
+  .manifesto-title,
+  .manifesto-lead,
+  .approach-eyebrow,
+  .approach-heading,
+  .approach-supporting,
+  .collab-eyebrow,
+  .collab-heading,
+  .collab-lead,
+  .audience-eyebrow,
+  .audience-heading,
+  .audience-supporting,
+  .values-heading,
+  .value-band-eyebrow,
+  .value-band-heading,
+  .promise-eyebrow,
+  .promise-heading,
+  .promise-desc,
+  .about-cta-heading,
+  .about-cta-title,
+  .about-cta-desc {
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  /* Services Page */
+  .services-hero-header,
+  .trademark-left,
+  .patent-left,
+  .services-search-header,
+  .services-journey-header,
+  .services-cta-content {
+    text-align: center;
+    margin-inline: auto;
+    align-items: center;
+  }
+
+  .services-hero-eyebrow,
+  .services-hero-title,
+  .services-hero-lead,
+  .trademark-eyebrow,
+  .trademark-heading,
+  .trademark-lead,
+  .patent-eyebrow,
+  .patent-panel-heading,
+  .patent-lead,
+  .services-search-eyebrow,
+  .services-search-heading,
+  .services-search-supporting,
+  .services-journey-eyebrow,
+  .services-journey-heading,
+  .services-journey-title,
+  .services-journey-lead,
+  .services-cta-eyebrow,
+  .services-cta-heading,
+  .services-cta-desc {
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  /* Process Page */
+  .process-hero-header,
+  .process-clarity-header,
+  .process-stages-header,
+  .process-accordion-header,
+  .process-filing-header,
+  .process-role-header,
+  .process-final-cta-card {
+    text-align: center;
+    margin-inline: auto;
+    align-items: center;
+  }
+
+  .process-hero-eyebrow,
+  .process-hero-title,
+  .process-hero-lead,
+  .process-hero-subheading,
+  .process-clarity-eyebrow,
+  .process-clarity-heading,
+  .process-clarity-title,
+  .process-clarity-lead,
+  .process-stages-eyebrow,
+  .process-stages-heading,
+  .process-stages-title,
+  .process-stages-lead,
+  .process-acc-eyebrow,
+  .process-acc-title,
+  .process-accordion-heading,
+  .process-acc-lead,
+  .process-filing-eyebrow,
+  .process-filing-heading,
+  .process-filing-title,
+  .process-filing-lead,
+  .process-role-eyebrow,
+  .process-role-heading,
+  .process-role-title,
+  .process-role-lead,
+  .process-final-cta-heading {
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  /* Scenarios Page */
+  .scenarios-hero-header,
+  .scenario-header-block,
+  .technical-editorial-board,
+  .next-steps-header,
+  .scenarios-final-statement-box {
+    text-align: center;
+    margin-inline: auto;
+    align-items: center;
+  }
+
+  .scenarios-hero-eyebrow,
+  .scenarios-hero-title,
+  .scenarios-hero-lead,
+  .scenarios-hero-sub-title,
+  .scenario-section-eyebrow,
+  .scenario-section-heading,
+  .scenario-section-intro,
+  .scenario-lead-eyebrow,
+  .scenario-lead-title,
+  .next-steps-eyebrow,
+  .next-steps-title,
+  .next-steps-subtext,
+  .scenarios-final-statement-text {
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  /* Contact Page */
+  .contact-intro-main,
+  .appt-left,
+  .intake-indicator,
+  .channels-header-block,
+  .contact-loc-info,
+  .closing-checklist-header,
+  .closing-statement-box,
+  .closing-statement-content {
+    text-align: center;
+    margin-inline: auto;
+    align-items: center;
+  }
+
+  .contact-intro-eyebrow,
+  .contact-intro-title,
+  .contact-intro-lead,
+  .appt-eyebrow,
+  .appt-title,
+  .appt-desc,
+  .intake-indicator-label,
+  .intake-indicator-desc,
+  .channels-eyebrow,
+  .channels-title,
+  .channels-intro-desc,
+  .contact-loc-eyebrow,
+  .contact-loc-heading,
+  .contact-address-name,
+  .closing-checklist-eyebrow,
+  .closing-checklist-title,
+  .closing-checklist-desc,
+  .closing-statement-title,
+  .closing-statement-desc {
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  /* ------------------------------------------------------------------------
+     CTA Button Groups Alignment: Center action buttons on Tablet & Mobile (<= 1280px)
+     ------------------------------------------------------------------------ */
+  .hero-actions,
+  .hero-strategy-ctas,
+  .consultation-actions,
+  .consultation-panel-actions,
+  .services-hero-actions,
+  .services-cta-actions,
+  .about-cta-actions,
+  .closing-statement-actions {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 14px !important;
+    margin-inline: auto !important;
+    text-align: center !important;
+  }
+
+  .process-final-cta-btn,
+  .scenarios-final-statement-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-inline: auto !important;
+    text-align: center !important;
+  }
+
+  .about-hero-meta-strip {
+    justify-content: center !important;
+    margin-inline: auto !important;
+  }
+
+  /* ------------------------------------------------------------------------
+     Card Balance & Equal Heights Architecture
+     ------------------------------------------------------------------------ */
+  .service-card,
+  .scenario-panel,
+  .split-panel,
+  .portfolio-feature-block,
+  .preparation-stage-card,
+  .journey-col-card,
+  .technical-stage-item,
+  .growth-card,
+  .change-selector-card,
+  .scenario-choice-card,
+  .closing-checklist-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-width: 0;
+  }
+
+  .service-card-cta,
+  .scenario-cta,
+  .split-panel-cta,
+  .journey-col-cta,
+  .scenario-choice-cta-link {
+    margin-top: auto;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   02. Tablet Viewport Refinements (<= 820px / 768px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 820px) {
+  /* Process clarity block cards balanced */
+  .process-clarity-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .process-clarity-block {
+    padding: 32px 24px;
+  }
+
+  /* Technical stages on Scenarios: balanced 2x2 grid */
+  .technical-stages-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  /* Decision framework table: cleanly stacked card rows */
+  .matrix-table {
+    border-top: none;
+  }
+
+  /* Contact page appointment layout */
+  .appt-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .appt-content-col {
+    max-width: 600px;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .appt-checklist {
+    text-align: left;
+    max-width: 500px;
+    margin-inline: auto;
+  }
+
+  /* Ensure map does not exceed container */
+  .contact-map-frame,
+  #contactMap {
+    width: 100%;
+    max-width: 100%;
+    border-radius: var(--radius-lg);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   03. Mobile Viewport Refinements (<= 576px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 576px) {
+  :root {
+    --container-padding-x: 20px;
+    --section-padding-y: 64px;
+  }
+
+  /* Typography fluid scaling */
+  .hero-title,
+  .about-hero-title,
+  .services-hero-title,
+  .process-hero-title,
+  .scenarios-hero-title,
+  .contact-intro-title {
+    font-size: clamp(2rem, 7.5vw, 2.75rem);
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+
+  .section-title,
+  .matrix-heading,
+  .portfolio-heading,
+  .preparation-heading,
+  .editorial-huge-statement,
+  .promise-heading,
+  .services-cta-heading {
+    font-size: clamp(1.75rem, 6.5vw, 2.35rem);
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  /* Single-column grids for all cards on mobile */
+  .services-grid,
+  .scenarios-grid,
+  .technical-stages-grid,
+  .growth-asymmetric-grid,
+  .next-steps-choices-grid,
+  .closing-checklist-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Full-width tap targets for main mobile action buttons */
+  .hero-actions .btn,
+  .hero-strategy-ctas .btn-hero-primary,
+  .hero-strategy-ctas .btn-hero-secondary,
+  .consultation-actions .btn,
+  .services-hero-actions .btn,
+  .services-cta-actions .btn,
+  .about-cta-actions .btn,
+  .process-final-cta-btn,
+  .scenarios-final-statement-btn,
+  .contact-submit-btn,
+  .closing-action-primary {
+    width: 100%;
+    max-width: 100%;
+    min-height: 48px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Form fields mobile sizing */
+  .appt-form-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .appt-field-input,
+  .appt-field-select,
+  .appt-field-textarea {
+    width: 100%;
+    max-width: 100%;
+    min-height: 46px;
+    font-size: 0.9375rem;
+  }
+
+  .appt-field-textarea {
+    min-height: 100px;
+  }
+
+  /* Split panel comparison spacing */
+  .split-panel {
+    padding: 30px 20px;
+  }
+
+  .split-panel-tags {
+    gap: 8px;
+  }
+
+  .split-tag {
+    font-size: 0.7rem;
+    padding: 5px 12px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   04. Ultra-Compact Mobile Viewports (<= 360px & 320px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 360px) {
+  :root {
+    --container-padding-x: 16px;
+    --section-padding-y: 52px;
+  }
+
+  .hero-title,
+  .about-hero-title,
+  .services-hero-title,
+  .process-hero-title,
+  .scenarios-hero-title,
+  .contact-intro-title {
+    font-size: 1.85rem;
+    letter-spacing: -0.01em;
+  }
+
+  .section-title,
+  .matrix-heading,
+  .portfolio-heading,
+  .editorial-huge-statement {
+    font-size: 1.6rem;
+  }
+
+  .service-card,
+  .scenario-panel,
+  .split-panel,
+  .consultation-box,
+  .final-statement-card,
+  .appt-card,
+  .contact-form-card {
+    padding: 24px 16px;
+  }
+
+  .header-logo img,
+  .header-logo svg {
+    width: 125px;
+  }
+
+  .header-actions {
+    gap: 5px;
+  }
+
+  .utility-controls {
+    gap: 4px;
+  }
+
+  .utility-btn,
+  .utility-controls .direction-toggle {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    min-height: 34px;
+  }
+
+  .utility-btn svg,
+  .utility-controls .direction-toggle svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .mobile-menu-toggle {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
+  }
+
+  .mobile-drawer {
+    padding: 18px 16px 28px;
+  }
+
+  .mobile-drawer-action-btn,
+  .mobile-drawer-cta {
+    padding: 10px 14px !important;
+    font-size: 0.75rem !important;
+    min-height: 44px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   05. RTL Multilingual Alignment Protection on Mobile & Tablet (<= 1280px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1280px) {
+  [dir="rtl"] .hero-content,
+  [dir="rtl"] .section-header,
+  [dir="rtl"] .intro-left,
+  [dir="rtl"] .services-header-wrapper,
+  [dir="rtl"] .services-header-left,
+  [dir="rtl"] .process-intro-row,
+  [dir="rtl"] .process-intro-content,
+  [dir="rtl"] .precision-content,
+  [dir="rtl"] .consultation-left,
+  [dir="rtl"] .final-statement-content,
+  [dir="rtl"] .hero-strategy-content,
+  [dir="rtl"] .ip-value-content,
+  [dir="rtl"] .matrix-header-group,
+  [dir="rtl"] .portfolio-header,
+  [dir="rtl"] .preparation-header,
+  [dir="rtl"] .myth-header,
+  [dir="rtl"] .consultation-panel-inner,
+  [dir="rtl"] .editorial-statement-inner,
+  [dir="rtl"] .about-hero-left,
+  [dir="rtl"] .origin-left,
+  [dir="rtl"] .origin-right,
+  [dir="rtl"] .clarity-overlap-panel,
+  [dir="rtl"] .manifesto-header,
+  [dir="rtl"] .approach-header-row,
+  [dir="rtl"] .collab-left,
+  [dir="rtl"] .audience-left,
+  [dir="rtl"] .value-band-header,
+  [dir="rtl"] .promise-container,
+  [dir="rtl"] .about-cta-container,
+  [dir="rtl"] .services-hero-header,
+  [dir="rtl"] .trademark-left,
+  [dir="rtl"] .patent-left,
+  [dir="rtl"] .services-search-header,
+  [dir="rtl"] .services-journey-header,
+  [dir="rtl"] .services-cta-content,
+  [dir="rtl"] .process-hero-header,
+  [dir="rtl"] .process-clarity-header,
+  [dir="rtl"] .process-stages-header,
+  [dir="rtl"] .process-accordion-header,
+  [dir="rtl"] .process-filing-header,
+  [dir="rtl"] .process-role-header,
+  [dir="rtl"] .process-final-cta-card,
+  [dir="rtl"] .scenarios-hero-header,
+  [dir="rtl"] .scenario-header-block,
+  [dir="rtl"] .technical-editorial-board,
+  [dir="rtl"] .next-steps-header,
+  [dir="rtl"] .scenarios-final-statement-box,
+  [dir="rtl"] .contact-intro-main,
+  [dir="rtl"] .appt-left,
+  [dir="rtl"] .intake-indicator,
+  [dir="rtl"] .channels-header-block,
+  [dir="rtl"] .contact-loc-info,
+  [dir="rtl"] .closing-checklist-header,
+  [dir="rtl"] .closing-statement-box,
+  [dir="rtl"] .closing-statement-content {
+    text-align: center;
+    margin-inline: auto;
+    align-items: center;
+  }
+
+  [dir="rtl"] .hero-actions,
+  [dir="rtl"] .hero-strategy-ctas,
+  [dir="rtl"] .consultation-actions,
+  [dir="rtl"] .consultation-panel-actions,
+  [dir="rtl"] .services-hero-actions,
+  [dir="rtl"] .services-cta-actions,
+  [dir="rtl"] .about-cta-actions,
+  [dir="rtl"] .closing-statement-actions {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-inline: auto !important;
+    text-align: center !important;
+  }
+
+  [dir="rtl"] .process-final-cta-btn,
+  [dir="rtl"] .scenarios-final-statement-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-inline: auto !important;
+    text-align: center !important;
+  }
+
+  [dir="rtl"] .appt-checklist {
+    text-align: right;
+  }
+
+  [dir="rtl"] .process-timeline {
+    padding-right: 28px;
+    padding-left: 0;
+  }
+
+  [dir="rtl"] .process-timeline::before {
+    right: 12px;
+    left: auto;
+  }
+
+  [dir="rtl"] .process-node {
+    padding-right: 18px;
+    padding-left: 0;
+  }
+
+  [dir="rtl"] .process-node-indicator {
+    right: -28px;
+    left: auto;
+  }
+}
+
+
+
+

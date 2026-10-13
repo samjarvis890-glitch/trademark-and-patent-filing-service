@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Process | Trademark &amp; Patent Filing Journey | IPFORGE</title>
+  <meta name="description" content="A clear, structured path from idea to filing. Explore the six-stage IPFORGE trademark and patent filing process designed to bring clarity to every step.">
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Process | Trademark &amp; Patent Filing Journey | IPFORGE">
+  <meta property="og:description" content="A clear, structured path from idea to filing. Explore the six-stage IPFORGE trademark and patent filing process designed to bring clarity to every step.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/process/process-hero.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+      <script>
+    (function() {
+      try {
+        if (localStorage.getItem('ipforge_theme') === 'dark') {
+          document.documentElement.classList.add('dark-theme');
+          document.addEventListener('DOMContentLoaded', function() {
+            var imgs = document.querySelectorAll('.header-logo img, .footer-brand img, .footer-logo, img.footer-logo');
+            imgs.forEach(function(img) {
+              if (!img.classList.contains('logo-light') && !img.classList.contains('logo-dark')) {
+                img.src = 'assets/logo/logo-dark.svg';
+              }
+            });
+          });
+        }
+        var savedDir = localStorage.getItem('siteDirection');
+        if (savedDir === 'rtl' || savedDir === 'ltr') {
+          document.documentElement.setAttribute('dir', savedDir);
+        } else {
+          document.documentElement.setAttribute('dir', 'ltr');
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ======================================================================
+       HEADER
+       Shared IPFORGE Global Header with Process item active
+       ====================================================================== -->
+  <header class="site-header" id="top">
+    <div class="container header-container">
+      
+      <!-- Header Left: Logo -->
+      <a href="index.html" class="header-logo" aria-label="IPFORGE Homepage">
+        <img src="assets/logo/logo.svg" alt="IPFORGE Trademark &amp; Patent Filing Service" width="165" height="36">
+      </a>
+
+      <!-- Header Center: Desktop Navigation -->
+      <nav class="header-nav" aria-label="Primary Navigation">
+        <div class="nav-item-dropdown">
+          <button type="button" class="nav-link nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+            <span>Home</span>
+            <svg class="dropdown-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="index.html" class="nav-dropdown-item" role="menuitem">
+              <span>Home 1</span>
+            </a>
+            <a href="home-2.html" class="nav-dropdown-item" role="menuitem">
+              <span>Home 2</span>
+            </a>
+          </div>
+        </div>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="process.html" class="nav-link active" aria-current="page">Process</a>
+        <a href="scenarios.html" class="nav-link">Scenarios</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header Right: Utility Controls & CTA -->
+      <div class="header-actions">
+        
+        <div class="utility-controls">
+                    <!-- Control 01: Theme Toggle (Light / Dark) -->
+          <div style="position: relative;">
+            <button type="button" class="utility-btn theme-toggle-btn" id="themeToggle" aria-label="Switch to dark theme" title="Switch to dark theme">
+              <!-- Moon Icon for Light Theme (visible by default) -->
+              <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+              <!-- Sun Icon for Dark Theme (visible in dark theme) -->
+              <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+            </button>
+          </div>
+
+                    <!-- Control 02: LTR / RTL Direction Toggle -->
+          <div style="position: relative;">
+            <button type="button" class="utility-btn direction-toggle" id="directionToggle" aria-label="Switch to right-to-left layout" aria-pressed="false" title="Switch to right-to-left layout">
+              <svg class="direction-icon" width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Consultation Header CTA -->
+        <a href="contact.html#contact-form-section" class="btn btn-primary"><span>BOOK A CONSULTATION</span></a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="mobile-menu-toggle" aria-label="Open mobile navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="hamburger-icon">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </span>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-label="Mobile Navigation">
+    <ul class="mobile-nav-list">
+      <li class="mobile-dropdown-item">
+        <div class="mobile-dropdown-header">
+          <span class="mobile-nav-link">Home</span>
+          <button type="button" class="mobile-submenu-toggle" aria-label="Toggle Home Submenu" aria-expanded="false">
+            <svg width="12" height="8" viewBox="0 0 12 8" fill="none">
+              <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+        <ul class="mobile-subnav-list">
+          <li><a href="index.html" class="mobile-subnav-link">Home 1</a></li>
+          <li><a href="home-2.html" class="mobile-subnav-link">Home 2</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html" class="mobile-nav-link">About</a></li>
+      <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+      <li><a href="process.html" class="mobile-nav-link active" aria-current="page">Process</a></li>
+      <li><a href="scenarios.html" class="mobile-nav-link">Scenarios</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <!-- Mobile Drawer Actions (Matching Image 3) -->
+    <div class="mobile-drawer-footer">
+      <button type="button" class="mobile-drawer-action-btn theme-toggle-btn mobile-theme-btn" aria-label="Switch to dark theme" title="Switch to dark theme">
+        <span class="mobile-theme-label">DARK MODE</span>
+        <span class="mobile-drawer-btn-icon">
+          <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </span>
+      </button>
+
+      <button type="button" class="mobile-drawer-action-btn direction-toggle mobile-dir-btn" aria-label="Switch to right-to-left layout" aria-pressed="false" title="Switch to right-to-left layout">
+        <span class="mobile-dir-label">RTL VIEW</span>
+        <span class="mobile-drawer-btn-icon">
+          <svg class="direction-icon" width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
+          </svg>
+        </span>
+      </button>
+
+      <a href="contact.html#contact-form-section" class="btn btn-primary mobile-drawer-cta">
+        <span>BOOK A CONSULTATION</span>
+      </a>
+    </div>
+  </div>
+
+
+  <!-- ======================================================================
+       MAIN CONTENT — EXACTLY 6 BODY SECTIONS
+       ====================================================================== -->
+  <main id="main-content">
+
+    <!-- ======================================================================
+         SECTION 01 OF 06 — PROCESS INTRODUCTION
+         A clear path from idea to filing with structured flow badge & image
+         ====================================================================== -->
+    <section class="process-hero-section" id="process-intro">
+      <div class="container">
+        
+        <!-- Top Editorial Header -->
+        <div class="process-hero-header">
+          <span class="process-hero-eyebrow">OUR PROCESS</span>
+
+          <h1 class="process-hero-title">
+            <span style="display: block;">A Clear Path From</span>
+            <span style="display: block;">Idea To Filing</span>
+          </h1>
+
+          <p class="process-hero-lead">
+            Trademark and patent filing can feel complex when the steps are unclear. Our process is designed to organize the journey, prepare the right information, review the details carefully, and move the application forward with greater clarity.
+          </p>
+
+          <!-- Interactive Process Tracker Strip -->
+          <div class="process-flow-badge-strip" aria-label="Process Flow">
+            <span>UNDERSTAND</span>
+            <span aria-hidden="true">→</span>
+            <span>PREPARE</span>
+            <span aria-hidden="true">→</span>
+            <span>REVIEW</span>
+            <span aria-hidden="true">→</span>
+            <span>REFINE</span>
+            <span aria-hidden="true">→</span>
+            <span>FILE</span>
+            <span aria-hidden="true">→</span>
+            <span>FOLLOW THROUGH</span>
+          </div>
+
+          <!-- Secondary Heading & Statement Row -->
+          <div class="process-hero-statement-row">
+            <h2 class="process-hero-subheading">
+              EVERY STEP HAS A PURPOSE.
+            </h2>
+            <div class="process-hero-subtext-wrap">
+              <p class="process-hero-subtext">
+                From the first conversation to the stages that follow filing, each part of the process is focused on keeping information organized and expectations clear.
+              </p>
+              <p class="process-hero-disclaimer">
+                The exact requirements and procedural steps may vary depending on the type of application and applicable filing requirements.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Horizontal Editorial Hero Image -->
+        <div class="process-hero-banner-wrapper">
+          <img src="assets/images/process/process-hero.jpg" alt="Intellectual property preparation workspace with organized technical documents, precision drafting instruments, notebook, and dark navy portfolio" width="1920" height="1080" fetchpriority="high">
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         SECTION 02 OF 06 — START WITH CLARITY
+         Exactly 3 balanced content blocks: Understand, Collect, Define
+         ====================================================================== -->
+    <section class="process-clarity-section" id="start-with-clarity">
+      <div class="container">
+        
+        <div class="process-clarity-header">
+          <h2 class="process-clarity-heading">
+            <span style="display: block;">Good Filings Begin</span>
+            <span style="display: block;">With Good Questions.</span>
+          </h2>
+          <p class="process-clarity-intro">
+            Before documents are prepared, we first need to understand what you are trying to protect, what you already have, and what you want the filing process to accomplish.
+          </p>
+        </div>
+
+        <!-- Exactly 3 Content Blocks -->
+        <div class="process-clarity-grid">
+          
+          <!-- Block 01 -->
+          <div class="process-clarity-block">
+            <span class="clarity-block-num">01 — UNDERSTAND</span>
+            <h3 class="clarity-block-title">WHAT TO PROTECT</h3>
+            <p class="clarity-block-desc">
+              What are you trying to protect? We begin by understanding your brand, invention, business context, and the purpose behind the application.
+            </p>
+          </div>
+
+          <!-- Block 02 -->
+          <div class="process-clarity-block">
+            <span class="clarity-block-num">02 — COLLECT</span>
+            <h3 class="clarity-block-title">AVAILABLE ASSETS</h3>
+            <p class="clarity-block-desc">
+              What information is available? Relevant names, descriptions, drawings, ownership information, business details, and supporting materials are identified and organized.
+            </p>
+          </div>
+
+          <!-- Block 03 -->
+          <div class="process-clarity-block">
+            <span class="clarity-block-num">03 — DEFINE</span>
+            <h3 class="clarity-block-title">NEXT PRIORITIES</h3>
+            <p class="clarity-block-desc">
+              What needs to happen next? The available information is used to establish a clear starting point for preparation and review.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         SECTION 03 OF 06 — THE SIX-STAGE PROCESS
+         Connected editorial process visualization (6 balanced stages)
+         ====================================================================== -->
+    <section class="process-stages-section" id="six-stage-process">
+      <div class="container">
+        
+        <div class="process-stages-header">
+          <h2 class="process-stages-heading">
+            <span style="display: block;">The Process,</span>
+            <span style="display: block;">Step By Step.</span>
+          </h2>
+          <p class="process-stages-intro">
+            Every filing follows a sequence of preparation, review, submission, and follow-through. The six stages below provide a simple view of how that journey is organized.
+          </p>
+        </div>
+
+        <!-- Connected Editorial Stages Flow -->
+        <div class="process-stages-flow">
+          
+          <!-- Stage 01 -->
+          <div class="process-stage-node">
+            <div class="process-node-top">
+              <span class="process-stage-num">01</span>
+              <span class="process-node-chip">INITIATION</span>
+            </div>
+            <h3 class="process-stage-title">DISCOVER</h3>
+            <p class="process-stage-desc">
+              Understand the brand, invention, objective, and information available at the starting point.
+            </p>
+          </div>
+
+          <!-- Stage 02 -->
+          <div class="process-stage-node">
+            <div class="process-node-top">
+              <span class="process-stage-num">02</span>
+              <span class="process-node-chip">ASSEMBLY</span>
+            </div>
+            <h3 class="process-stage-title">PREPARE</h3>
+            <p class="process-stage-desc">
+              Organize the documents, descriptions, drawings, and other information needed for the application.
+            </p>
+          </div>
+
+          <!-- Stage 03 -->
+          <div class="process-stage-node">
+            <div class="process-node-top">
+              <span class="process-stage-num">03</span>
+              <span class="process-node-chip">ANALYSIS</span>
+            </div>
+            <h3 class="process-stage-title">REVIEW</h3>
+            <p class="process-stage-desc">
+              Examine the prepared information for consistency, clarity, completeness, and potential gaps.
+            </p>
+          </div>
+
+          <!-- Stage 04 -->
+          <div class="process-stage-node">
+            <div class="process-node-top">
+              <span class="process-stage-num">04</span>
+              <span class="process-node-chip">OPTIMIZATION</span>
+            </div>
+            <h3 class="process-stage-title">REFINE</h3>
+            <p class="process-stage-desc">
+              Address questions, clarify information, and make the application materials ready for filing.
+            </p>
+          </div>
+
+          <!-- Stage 05 -->
+          <div class="process-stage-node">
+            <div class="process-node-top">
+              <span class="process-stage-num">05</span>
+              <span class="process-node-chip">SUBMISSION</span>
+            </div>
+            <h3 class="process-stage-title">FILE</h3>
+            <p class="process-stage-desc">
+              Move the completed application through the appropriate filing route and submission process.
+            </p>
+          </div>
+
+          <!-- Stage 06 -->
+          <div class="process-stage-node">
+            <div class="process-node-top">
+              <span class="process-stage-num">06</span>
+              <span class="process-node-chip">MONITORING</span>
+            </div>
+            <h3 class="process-stage-title">FOLLOW THROUGH</h3>
+            <p class="process-stage-desc">
+              Keep the next procedural steps organized after filing and understand what happens from there.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         SECTION 04 OF 06 — WHAT HAPPENS AT EACH STAGE
+         Interactive Accessible 6-Item Accordion
+         ====================================================================== -->
+    <section class="process-accordion-section" id="stage-details">
+      <div class="container">
+        
+        <div class="process-accordion-header">
+          <h2 class="process-accordion-heading">
+            <span style="display: block;">What Happens</span>
+            <span style="display: block;">Along The Way?</span>
+          </h2>
+          <p class="process-accordion-intro">
+            The process becomes easier to understand when each stage has a clear purpose. Explore what each step is designed to accomplish.
+          </p>
+        </div>
+
+        <!-- 6-Item Accordion Group -->
+        <div class="process-accordion-wrap">
+          
+          <!-- Accordion 01 -->
+          <div class="process-accordion-item active">
+            <button type="button" class="process-acc-trigger" aria-expanded="true" aria-controls="acc-body-01" id="acc-btn-01">
+              <div class="process-acc-header-left">
+                <span class="process-acc-num">01</span>
+                <h3 class="process-acc-title">DISCOVER</h3>
+              </div>
+              <svg class="process-acc-chevron" width="16" height="10" viewBox="0 0 16 10" fill="none">
+                <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="process-acc-collapse" id="acc-body-01" role="region" aria-labelledby="acc-btn-01">
+              <div class="process-acc-body">
+                <p class="process-acc-desc">
+                  The process begins by understanding what you want to protect, the nature of the brand or invention, and the outcome you are working toward.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion 02 -->
+          <div class="process-accordion-item">
+            <button type="button" class="process-acc-trigger" aria-expanded="false" aria-controls="acc-body-02" id="acc-btn-02">
+              <div class="process-acc-header-left">
+                <span class="process-acc-num">02</span>
+                <h3 class="process-acc-title">PREPARE</h3>
+              </div>
+              <svg class="process-acc-chevron" width="16" height="10" viewBox="0 0 16 10" fill="none">
+                <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="process-acc-collapse" id="acc-body-02" role="region" aria-labelledby="acc-btn-02">
+              <div class="process-acc-body">
+                <p class="process-acc-desc">
+                  Relevant information and supporting materials are collected and organized for the application and its requirements.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion 03 -->
+          <div class="process-accordion-item">
+            <button type="button" class="process-acc-trigger" aria-expanded="false" aria-controls="acc-body-03" id="acc-btn-03">
+              <div class="process-acc-header-left">
+                <span class="process-acc-num">03</span>
+                <h3 class="process-acc-title">REVIEW</h3>
+              </div>
+              <svg class="process-acc-chevron" width="16" height="10" viewBox="0 0 16 10" fill="none">
+                <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="process-acc-collapse" id="acc-body-03" role="region" aria-labelledby="acc-btn-03">
+              <div class="process-acc-body">
+                <p class="process-acc-desc">
+                  The prepared information is reviewed for consistency, clarity, completeness, and areas that may need further attention.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion 04 -->
+          <div class="process-accordion-item">
+            <button type="button" class="process-acc-trigger" aria-expanded="false" aria-controls="acc-body-04" id="acc-btn-04">
+              <div class="process-acc-header-left">
+                <span class="process-acc-num">04</span>
+                <h3 class="process-acc-title">REFINE</h3>
+              </div>
+              <svg class="process-acc-chevron" width="16" height="10" viewBox="0 0 16 10" fill="none">
+                <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="process-acc-collapse" id="acc-body-04" role="region" aria-labelledby="acc-btn-04">
+              <div class="process-acc-body">
+                <p class="process-acc-desc">
+                  Questions and information gaps are addressed so the application materials can be brought into a more complete state.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion 05 -->
+          <div class="process-accordion-item">
+            <button type="button" class="process-acc-trigger" aria-expanded="false" aria-controls="acc-body-05" id="acc-btn-05">
+              <div class="process-acc-header-left">
+                <span class="process-acc-num">05</span>
+                <h3 class="process-acc-title">FILE</h3>
+              </div>
+              <svg class="process-acc-chevron" width="16" height="10" viewBox="0 0 16 10" fill="none">
+                <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="process-acc-collapse" id="acc-body-05" role="region" aria-labelledby="acc-btn-05">
+              <div class="process-acc-body">
+                <p class="process-acc-desc">
+                  Once the application materials are prepared and ready, the filing is submitted through the appropriate filing route.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion 06 -->
+          <div class="process-accordion-item">
+            <button type="button" class="process-acc-trigger" aria-expanded="false" aria-controls="acc-body-06" id="acc-btn-06">
+              <div class="process-acc-header-left">
+                <span class="process-acc-num">06</span>
+                <h3 class="process-acc-title">FOLLOW THROUGH</h3>
+              </div>
+              <svg class="process-acc-chevron" width="16" height="10" viewBox="0 0 16 10" fill="none">
+                <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="process-acc-collapse" id="acc-body-06" role="region" aria-labelledby="acc-btn-06">
+              <div class="process-acc-body">
+                <p class="process-acc-desc">
+                  After submission, the applicable procedural stages and next steps are kept organized so the process remains clear.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         SECTION 05 OF 06 — REVIEW, FILING & FOLLOW-THROUGH
+         Three structured areas + Gemini photography
+         ====================================================================== -->
+    <section class="process-filing-section" id="filing-follow-through">
+      <div class="container">
+        
+        <div class="process-filing-header">
+          <h2 class="process-filing-heading">
+            <span style="display: block;">Prepared.</span>
+            <span style="display: block;">Reviewed.</span>
+            <span style="display: block;">Filed.</span>
+          </h2>
+          <p class="process-filing-intro">
+            Before an application moves forward, the details matter. Review and preparation help create a more organized filing, while follow-through keeps the next stages visible after submission.
+          </p>
+        </div>
+
+        <div class="process-filing-grid">
+          
+          <!-- Three Structured Content Areas -->
+          <div class="process-filing-areas">
+            
+            <!-- Area 01: REVIEW -->
+            <div class="filing-area-card">
+              <span class="filing-area-meta">01 / REVIEW</span>
+              <h3 class="filing-area-title">CHECK BEFORE MOVING FORWARD.</h3>
+              <p class="filing-area-desc">
+                Prepared information is reviewed for consistency, clarity, completeness, and areas that may require clarification.
+              </p>
+            </div>
+
+            <!-- Area 02: FILING -->
+            <div class="filing-area-card">
+              <span class="filing-area-meta">02 / FILING</span>
+              <h3 class="filing-area-title">MOVE THE APPLICATION FORWARD.</h3>
+              <p class="filing-area-desc">
+                Once the application materials are ready, the filing is submitted through the appropriate route for the application.
+              </p>
+            </div>
+
+            <!-- Area 03: FOLLOW-THROUGH -->
+            <div class="filing-area-card">
+              <span class="filing-area-meta">03 / FOLLOW-THROUGH</span>
+              <h3 class="filing-area-title">KNOW WHAT COMES NEXT.</h3>
+              <p class="filing-area-desc">
+                After filing, the next procedural steps and communications need to remain organized so you have a clearer understanding of what happens from there.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Editorial Photography Frame -->
+          <div class="process-filing-media">
+            <img src="assets/images/process/process-filing.jpg" alt="Professional preparing and organizing intellectual property filing documents beside a modern laptop" width="1600" height="1100" loading="lazy">
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         SECTION 06 OF 06 — YOUR ROLE IN THE PROCESS & FINAL CTA
+         Two balanced 4-item comparison groups + Integrated Final CTA
+         ====================================================================== -->
+    <section class="process-role-section" id="your-role">
+      <div class="container">
+        
+        <div class="process-role-header">
+          <h2 class="process-role-heading">
+            <span style="display: block;">You Bring The Idea.</span>
+            <span style="display: block;">We Help Organize The Path.</span>
+          </h2>
+          <p class="process-role-intro">
+            A smooth filing process depends on clear information and communication. Knowing what to prepare can make the journey easier from the beginning.
+          </p>
+        </div>
+
+        <!-- Two Balanced Content Groups (4 items each) -->
+        <div class="process-role-groups-grid">
+          
+          <!-- Group 01: WHAT YOU CAN BRING -->
+          <div class="role-group-col">
+            <h3 class="role-group-heading">WHAT YOU CAN BRING</h3>
+            <div class="role-items-list">
+              
+              <div class="role-item">
+                <span class="role-item-label">01 — YOUR BRAND</span>
+                <p class="role-item-desc">Names, marks, identity details, and relevant business information.</p>
+              </div>
+
+              <div class="role-item">
+                <span class="role-item-label">02 — YOUR INVENTION</span>
+                <p class="role-item-desc">Descriptions, drawings, technical details, and development information.</p>
+              </div>
+
+              <div class="role-item">
+                <span class="role-item-label">03 — YOUR INFORMATION</span>
+                <p class="role-item-desc">Ownership details and other information relevant to the application.</p>
+              </div>
+
+              <div class="role-item">
+                <span class="role-item-label">04 — YOUR QUESTIONS</span>
+                <p class="role-item-desc">Anything you want clarified before the process moves forward.</p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Group 02: WHAT YOU CAN EXPECT -->
+          <div class="role-group-col">
+            <h3 class="role-group-heading">WHAT YOU CAN EXPECT</h3>
+            <div class="role-items-list">
+              
+              <div class="role-item">
+                <span class="role-item-label">01 — CLARITY</span>
+                <p class="role-item-desc">A clearer understanding of the stages involved in the process.</p>
+              </div>
+
+              <div class="role-item">
+                <span class="role-item-label">02 — ORGANIZATION</span>
+                <p class="role-item-desc">Information arranged around the needs of the application.</p>
+              </div>
+
+              <div class="role-item">
+                <span class="role-item-label">03 — REVIEW</span>
+                <p class="role-item-desc">An opportunity to identify questions or gaps before filing.</p>
+              </div>
+
+              <div class="role-item">
+                <span class="role-item-label">04 — NEXT STEPS</span>
+                <p class="role-item-desc">A clearer view of what happens after the application is submitted.</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Integrated Final CTA Card within Section 06 -->
+        <div class="process-final-cta-card">
+          <h3 class="process-final-cta-heading">
+            READY TO UNDERSTAND YOUR NEXT STEP?
+          </h3>
+          <button type="button" class="process-final-cta-btn" data-open-modal="consultation">
+            START A CONVERSATION →
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ======================================================================
+       FOOTER
+       Shared Global Footer exactly matching index.html
+       ====================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      
+      <!-- Top 4 Columns -->
+      <div class="footer-top">
+        
+        <!-- Col 01: Brand Identity -->
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo" aria-label="IPFORGE Home">
+            <img src="assets/logo/logo.svg" alt="IPFORGE Logo" width="160" height="35">
+          </a>
+          <p class="footer-tagline">
+            PROTECTING IDEAS.<br>
+            CLARIFYING THE NEXT STEP.
+          </p>
+          <p class="footer-desc">
+            Structured support for trademark and patent filing decisions, designed around clarity, precision, and practical progress.
+          </p>
+          <div class="footer-social-row">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile">
+              <svg viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram Profile">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 02: Explore Links -->
+        <div>
+          <span class="footer-col-heading">Explore</span>
+          <ul class="footer-nav-list">
+            <li><a href="index.html" class="footer-nav-link">Home</a></li>
+            <li><a href="about.html" class="footer-nav-link">About</a></li>
+            <li><a href="services.html" class="footer-nav-link">Services</a></li>
+            <li><a href="process.html" class="footer-nav-link">Process &amp; Timeline</a></li>
+            <li><a href="scenarios.html" class="footer-nav-link">Scenarios</a></li>
+            <li><a href="contact.html" class="footer-nav-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 03: IP Services Links -->
+        <div>
+          <span class="footer-col-heading">IP Services</span>
+          <ul class="footer-nav-list">
+            <li><a href="services.html#trademark-services" class="footer-nav-link">Trademark Search</a></li>
+            <li><a href="services.html#trademark-services" class="footer-nav-link">Trademark Filing</a></li>
+            <li><a href="services.html#patent-services" class="footer-nav-link">Patent Filing</a></li>
+            <li><a href="contact.html" class="footer-nav-link">IP Consultation</a></li>
+            <li><a href="scenarios.html" class="footer-nav-link">IP Strategy</a></li>
+            <li><a href="services.html" class="footer-nav-link">Portfolio Management</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 04: Resources Links -->
+        <div>
+          <span class="footer-col-heading">Resources</span>
+          <ul class="footer-nav-list">
+            <li><a href="scenarios.html" class="footer-nav-link">IP Insights</a></li>
+            <li><a href="about.html" class="footer-nav-link">Trademark Guide</a></li>
+            <li><a href="process.html" class="footer-nav-link">Patent Basics</a></li>
+            <li><a href="services.html#search-preparation" class="footer-nav-link">Filing Preparation</a></li>
+            <li><a href="#your-role" class="footer-nav-link">Documentation Checklist</a></li>
+            <li><a href="#your-role" class="footer-nav-link">FAQs &amp; Guidance</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Thin Horizontal Divider -->
+      <div class="footer-divider"></div>
+
+      <!-- Bottom Bar: Legal & Rights -->
+      <div class="footer-bottom">
+        <div>
+          © 2026 IPFORGE. All rights reserved.
+        </div>
+        <div class="footer-legal-links">
+          <a href="#top" class="footer-legal-link">Privacy Policy</a>
+          <a href="#top" class="footer-legal-link">Terms</a>
+          <a href="#top" class="footer-legal-link">Accessibility</a>
+        </div>
+      </div>
+
+      <!-- Subtle Legal Disclaimer -->
+      <p class="footer-disclaimer">
+        Information provided on this website is for general informational purposes and does not constitute legal advice.
+      </p>
+
+    </div>
+  </footer>
+
+
+  <!-- ======================================================================
+       MODAL — BOOK A CONSULTATION (Accessible Interactive Dialog)
+       ====================================================================== -->
+  <div class="modal-overlay" id="consultationModal" role="dialog" aria-modal="true" aria-labelledby="modalHeading" aria-hidden="true">
+    <div class="modal-window">
+      <button type="button" class="modal-close-btn" aria-label="Close consultation dialog">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <span class="section-eyebrow" style="margin-bottom: 8px;">Direct Advisory</span>
+      <h3 class="modal-title" id="modalHeading">Book an IP Consultation</h3>
+      <p class="modal-desc">
+        Select your objective and share details to review your filing trajectory with our team.
+      </p>
+
+      <form id="consultationForm">
+        <div class="form-group">
+          <label class="form-label" for="modalName">Full Name</label>
+          <input type="text" id="modalName" class="form-input" placeholder="e.g. Katherine Vance" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modalEmail">Business Email</label>
+          <input type="email" id="modalEmail" class="form-input" placeholder="katherine@company.com" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modalServiceType">Filing Objective</label>
+          <select id="modalServiceType" class="form-select" required>
+            <option value="Trademark Search">Trademark Search &amp; Clearance</option>
+            <option value="Trademark Filing">Trademark Filing Preparation</option>
+            <option value="Patent Filing">Patent Documentation &amp; Filing</option>
+            <option value="IP Consultation">Comprehensive IP Consultation</option>
+            <option value="Brand Protection">Brand Protection Roadmap</option>
+            <option value="IP Strategy">Corporate IP Strategy</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modalNotes">Project Summary (Confidential)</label>
+          <textarea id="modalNotes" class="form-textarea" placeholder="Briefly summarize your mark, invention, or current filing stage..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">
+          Request Consultation
+        </button>
+
+        <div class="form-feedback" role="alert"></div>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- Core Scripts -->
+  <script src="js/navigation.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

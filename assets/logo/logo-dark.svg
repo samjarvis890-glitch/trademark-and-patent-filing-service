@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 48" width="220" height="48" fill="none">
+  <!-- Mark Symbol -->
+  <g transform="translate(0, 4)">
+    <rect width="40" height="40" rx="9" fill="#132337" stroke="#1E3A5F" stroke-width="1.2" />
+    <path d="M10 10H30V30H10V10Z" stroke="#38BDF8" stroke-opacity="0.35" stroke-width="0.8" stroke-dasharray="2 2" />
+    <!-- I Stem -->
+    <rect x="11.5" y="11" width="4.8" height="18" rx="1.2" fill="#FFFFFF" />
+    <!-- P Bowl -->
+    <path d="M16.3 11H23C26.5 11 29.5 13.8 29.5 17.2C29.5 20.6 26.5 23.4 23 23.4H16.3V19.2H22.5C23.9 19.2 25 18.2 25 17.2C25 16.2 23.9 15.2 22.5 15.2H16.3V11Z" fill="#38BDF8" />
+    <circle cx="21.5" cy="17.2" r="1.6" fill="#FFFFFF" />
+    <path d="M25 27.5L29 29L27.5 25" stroke="#38BDF8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- Wordmark -->
+  <text x="52" y="27" font-family="'DM Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif" font-size="20" font-weight="800" letter-spacing="0.08em" fill="#FFFFFF">IPFORGE</text>
+  <text x="53" y="38" font-family="'DM Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif" font-size="7.5" font-weight="600" letter-spacing="0.22em" fill="#94A3B8">TRADEMARK &amp; PATENT</text>
+</svg>

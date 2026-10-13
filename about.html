@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About IPFORGE | Trademark &amp; Patent Filing Service</title>
+  <meta name="description" content="Learn about IPFORGE, our approach to trademark and patent filing support, and our focus on clarity, precision, and practical next steps.">
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="About IPFORGE | Trademark &amp; Patent Filing Service">
+  <meta property="og:description" content="Learn about IPFORGE, our approach to trademark and patent filing support, and our focus on clarity, precision, and practical next steps.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/about/about-hero.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+      <script>
+    (function() {
+      try {
+        if (localStorage.getItem('ipforge_theme') === 'dark') {
+          document.documentElement.classList.add('dark-theme');
+          document.addEventListener('DOMContentLoaded', function() {
+            var imgs = document.querySelectorAll('.header-logo img, .footer-brand img, .footer-logo, img.footer-logo');
+            imgs.forEach(function(img) {
+              if (!img.classList.contains('logo-light') && !img.classList.contains('logo-dark')) {
+                img.src = 'assets/logo/logo-dark.svg';
+              }
+            });
+          });
+        }
+        var savedDir = localStorage.getItem('siteDirection');
+        if (savedDir === 'rtl' || savedDir === 'ltr') {
+          document.documentElement.setAttribute('dir', savedDir);
+        } else {
+          document.documentElement.setAttribute('dir', 'ltr');
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ======================================================================
+       HEADER
+       Shared IPFORGE Global Header with About item active
+       ====================================================================== -->
+  <header class="site-header" id="top">
+    <div class="container header-container">
+
+      <!-- Header Left: Logo -->
+      <a href="index.html" class="header-logo" aria-label="IPFORGE Homepage">
+        <img src="assets/logo/logo.svg" alt="IPFORGE Trademark &amp; Patent Filing Service" width="165" height="36">
+      </a>
+
+      <!-- Header Center: Desktop Navigation -->
+      <nav class="header-nav" aria-label="Primary Navigation">
+        <div class="nav-item-dropdown">
+          <button type="button" class="nav-link nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+            <span>Home</span>
+            <svg class="dropdown-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="index.html" class="nav-dropdown-item" role="menuitem">
+              <span>Home 1</span>
+            </a>
+            <a href="home-2.html" class="nav-dropdown-item" role="menuitem">
+              <span>Home 2</span>
+            </a>
+          </div>
+        </div>
+        <a href="about.html" class="nav-link active" aria-current="page">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="process.html" class="nav-link">Process</a>
+        <a href="scenarios.html" class="nav-link">Scenarios</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header Right: Utility Controls & CTA -->
+      <div class="header-actions">
+
+        <div class="utility-controls">
+                    <!-- Control 01: Theme Toggle (Light / Dark) -->
+          <div style="position: relative;">
+            <button type="button" class="utility-btn theme-toggle-btn" id="themeToggle" aria-label="Switch to dark theme" title="Switch to dark theme">
+              <!-- Moon Icon for Light Theme (visible by default) -->
+              <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+              <!-- Sun Icon for Dark Theme (visible in dark theme) -->
+              <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+            </button>
+          </div>
+
+                    <!-- Control 02: LTR / RTL Direction Toggle -->
+          <div style="position: relative;">
+            <button type="button" class="utility-btn direction-toggle" id="directionToggle" aria-label="Switch to right-to-left layout" aria-pressed="false" title="Switch to right-to-left layout">
+              <svg class="direction-icon" width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Header CTA Button -->
+        <a href="contact.html#contact-form-section" class="btn btn-primary header-cta"><span>BOOK A CONSULTATION</span></a>
+
+        <!-- Mobile Hamburger Button -->
+        <button type="button" class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="hamburger-icon">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </span>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-label="Mobile Navigation">
+    <ul class="mobile-nav-list">
+      <li class="mobile-dropdown-item">
+        <div class="mobile-dropdown-header">
+          <span class="mobile-nav-link">Home</span>
+          <button type="button" class="mobile-submenu-toggle" aria-label="Toggle Home Submenu" aria-expanded="false">
+            <svg width="12" height="8" viewBox="0 0 12 8" fill="none">
+              <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+        <ul class="mobile-subnav-list">
+          <li><a href="index.html" class="mobile-subnav-link">Home 1</a></li>
+          <li><a href="home-2.html" class="mobile-subnav-link">Home 2</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html" class="mobile-nav-link active" aria-current="page">About</a></li>
+      <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+      <li><a href="process.html" class="mobile-nav-link">Process</a></li>
+      <li><a href="scenarios.html" class="mobile-nav-link">Scenarios</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <!-- Mobile Drawer Actions (Matching Image 3) -->
+    <div class="mobile-drawer-footer">
+      <button type="button" class="mobile-drawer-action-btn theme-toggle-btn mobile-theme-btn" aria-label="Switch to dark theme" title="Switch to dark theme">
+        <span class="mobile-theme-label">DARK MODE</span>
+        <span class="mobile-drawer-btn-icon">
+          <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </span>
+      </button>
+
+      <button type="button" class="mobile-drawer-action-btn direction-toggle mobile-dir-btn" aria-label="Switch to right-to-left layout" aria-pressed="false" title="Switch to right-to-left layout">
+        <span class="mobile-dir-label">RTL VIEW</span>
+        <span class="mobile-drawer-btn-icon">
+          <svg class="direction-icon" width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
+          </svg>
+        </span>
+      </button>
+
+      <a href="contact.html#contact-form-section" class="btn btn-primary mobile-drawer-cta">
+        <span>BOOK A CONSULTATION</span>
+      </a>
+    </div>
+  </div>
+
+
+  <!-- ======================================================================
+       MAIN CONTENT
+       ====================================================================== -->
+  <main id="main-content">
+
+    <!-- ======================================================================
+         SECTION 01 OF 06 — ABOUT HERO
+         Editorial typography-led hero on Warm White with vertical photography
+         ====================================================================== -->
+    <section class="about-hero-section" id="about-hero">
+      <div class="container about-hero-grid">
+
+        <!-- Left: Editorial Typography -->
+        <div class="about-hero-left">
+          <span class="about-hero-eyebrow">About IPFORGE</span>
+
+          <h1 class="about-hero-title">
+            <span class="about-hero-line">Protecting Ideas</span>
+            <span class="about-hero-line">Starts With</span>
+            <span class="about-hero-line">Understanding Them.</span>
+          </h1>
+
+          <p class="about-hero-desc">
+            IPFORGE exists to make trademark and patent filing decisions clearer, more structured, and easier to approach.
+          </p>
+
+          <div class="about-hero-meta-strip">
+            <span>Structured Guidance</span>
+            <span>•</span>
+            <span>Evidence-Led Strategy</span>
+            <span>•</span>
+            <span>Independent Advisory</span>
+          </div>
+        </div>
+
+        <!-- Right: Tall Vertical Editorial Image -->
+        <div class="about-hero-right">
+          <div class="about-hero-media-wrapper">
+            <div class="about-hero-image-frame">
+              <img src="assets/images/about/about-hero.jpg" alt="Refined workspace with technical sketches, notebooks, and architectural drafting tools representing ideas and intellectual property strategy" width="960" height="1200" fetchpriority="high">
+            </div>
+            <div class="about-hero-caption">
+              Clarity • Precision • Protection
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         SECTION 02 OF 06 — ORIGIN STORY & CLARITY PHILOSOPHY
+         Wide editorial layout: origin narrative & overlapping clarity composition
+         ====================================================================== -->
+    <section class="about-origin-section" id="origin">
+      <div class="container">
+        
+        <div class="origin-thin-rule" aria-hidden="true"></div>
+
+        <!-- Part 1: Why IPFORGE Exists -->
+        <div class="origin-grid">
+          <!-- Left: Number & Label -->
+          <div class="origin-left">
+            <div class="origin-oversized-num" aria-hidden="true">01</div>
+            <span class="origin-left-label">Why IPFORGE Exists</span>
+          </div>
+
+          <!-- Right: Heading & Three Distinct Narrative Paragraphs -->
+          <div class="origin-right">
+            <h2 class="origin-heading">
+              Good Ideas Deserve A Clearer Path.
+            </h2>
+
+            <div class="origin-paragraphs">
+              <p class="origin-p">
+                Intellectual property can feel complicated because important decisions often begin with questions rather than answers.
+              </p>
+              <p class="origin-p">
+                A business may have a new name, a developing invention, or an idea that is becoming commercially important. Understanding what comes next can make those decisions easier to approach.
+              </p>
+              <p class="origin-p">
+                IPFORGE was created around a simple principle: make the process more understandable, more organized, and more practical.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thin Editorial Divider -->
+        <div class="origin-thin-rule" style="margin: clamp(56px, 7vw, 84px) 0;" aria-hidden="true"></div>
+
+        <!-- Part 2: What Clarity Means -->
+        <div class="clarity-composition" id="clarity">
+          <!-- Wide Image (approx 58% width) -->
+          <div class="clarity-image-frame">
+            <img src="assets/images/about/clarity.jpg" alt="Organized intellectual property strategy workspace with technical drawings, modern devices, and drafting tools demonstrating clarity" width="1200" height="800" loading="lazy">
+          </div>
+
+          <!-- Overlapping Editorial Content Panel -->
+          <div class="clarity-overlap-panel">
+            <span class="section-eyebrow" style="margin-bottom: 16px;">Core Philosophy</span>
+            
+            <h3 class="clarity-heading">
+              Clarity Is Not About Making Things Simple.
+            </h3>
+
+            <p class="clarity-lead">
+              It is about making the important things easier to understand.
+            </p>
+
+            <div class="clarity-triad">
+              <div class="clarity-triad-statement">Know What Matters.</div>
+              <div class="clarity-triad-statement">Understand What Comes Next.</div>
+              <div class="clarity-triad-statement">Make Decisions With Context.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         SECTION 03 OF 06 — WHAT WE BELIEVE
+         Centered manifesto on deep navy with vertical rule typography
+         ====================================================================== -->
+    <section class="about-manifesto-section" id="manifesto">
+      <div class="container manifesto-container">
+
+        <h2 class="manifesto-title">
+          <span style="display: block;">We Believe</span>
+          <span style="display: block;">Intellectual Property</span>
+          <span style="display: block;">Should Feel Understandable.</span>
+        </h2>
+
+        <p class="manifesto-lead">
+          Protection begins with clarity. Before thinking about forms, filings, or deadlines, there should be a clear understanding of what is being protected and why it matters.
+        </p>
+
+        <!-- Three large words arranged vertically with thin lines -->
+        <div class="manifesto-vertical-words">
+          <div class="manifesto-word-row">
+            <span class="manifesto-word">Clarity</span>
+            <span class="manifesto-word-dash" aria-hidden="true"></span>
+            <span class="manifesto-word-num">01</span>
+          </div>
+
+          <div class="manifesto-word-row">
+            <span class="manifesto-word">Precision</span>
+            <span class="manifesto-word-dash" aria-hidden="true"></span>
+            <span class="manifesto-word-num">02</span>
+          </div>
+
+          <div class="manifesto-word-row">
+            <span class="manifesto-word">Progress</span>
+            <span class="manifesto-word-dash" aria-hidden="true"></span>
+            <span class="manifesto-word-num">03</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         SECTION 04 OF 06 — OUR APPROACH
+         Horizontal editorial sequence across 4 structured stages
+         ====================================================================== -->
+    <section class="about-approach-section" id="approach">
+      <div class="container">
+
+        <div class="approach-header">
+          <span class="section-eyebrow" style="margin-bottom: 16px;">Our Methodology</span>
+          <h2 class="approach-heading">How We Approach The Work.</h2>
+          <p class="approach-supporting">
+            Every situation is different, but a clear approach can make the next decision easier.
+          </p>
+        </div>
+
+        <div class="approach-sequence-grid">
+          <!-- Stage 01 -->
+          <div class="approach-stage">
+            <span class="approach-stage-num">01</span>
+            <h3 class="approach-stage-title">Listen</h3>
+            <p class="approach-stage-desc">
+              Start by understanding the business, idea, invention, or brand behind the question.
+            </p>
+          </div>
+
+          <!-- Stage 02 -->
+          <div class="approach-stage">
+            <span class="approach-stage-num">02</span>
+            <h3 class="approach-stage-title">Understand</h3>
+            <p class="approach-stage-desc">
+              Identify the relevant intellectual property considerations and the information available.
+            </p>
+          </div>
+
+          <!-- Stage 03 -->
+          <div class="approach-stage">
+            <span class="approach-stage-num">03</span>
+            <h3 class="approach-stage-title">Structure</h3>
+            <p class="approach-stage-desc">
+              Organize the important details into a clearer path forward.
+            </p>
+          </div>
+
+          <!-- Stage 04 -->
+          <div class="approach-stage">
+            <span class="approach-stage-num">04</span>
+            <h3 class="approach-stage-title">Move Forward</h3>
+            <p class="approach-stage-desc">
+              Focus on the next practical step rather than trying to solve everything at once.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         SECTION 05 OF 06 — WHO WE SUPPORT & COLLABORATIVE VALUES
+         Audience statement, collaborative consultation advisory, and foundational standards
+         ====================================================================== -->
+    <section class="about-audience-section" id="audience">
+      <div class="container">
+
+        <!-- Part 1: Audience Grid -->
+        <div class="audience-grid">
+
+          <!-- Left: Anchor Statement -->
+          <div class="audience-left">
+            <span class="section-eyebrow" style="margin-bottom: 20px;">Audience &amp; Partners</span>
+            
+            <h2 class="audience-heading">
+              For People Building Something Worth Protecting.
+            </h2>
+
+            <p class="audience-supporting">
+              IPFORGE is designed for businesses and creators at different stages of developing brands, products, and ideas.
+            </p>
+          </div>
+
+          <!-- Right: Editorial List (No Cards, Hover Movement & Arrow) -->
+          <div class="audience-list">
+
+            <!-- Item 01 -->
+            <div class="audience-list-item">
+              <span class="audience-item-num">01</span>
+              <div class="audience-item-body">
+                <h3 class="audience-item-title">
+                  Founders
+                  <span class="audience-item-arrow" aria-hidden="true">→</span>
+                </h3>
+                <p class="audience-item-desc">
+                  For people building a new business identity.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 02 -->
+            <div class="audience-list-item">
+              <span class="audience-item-num">02</span>
+              <div class="audience-item-body">
+                <h3 class="audience-item-title">
+                  Innovators
+                  <span class="audience-item-arrow" aria-hidden="true">→</span>
+                </h3>
+                <p class="audience-item-desc">
+                  For people developing a new product or invention.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 03 -->
+            <div class="audience-list-item">
+              <span class="audience-item-num">03</span>
+              <div class="audience-item-body">
+                <h3 class="audience-item-title">
+                  Growing Businesses
+                  <span class="audience-item-arrow" aria-hidden="true">→</span>
+                </h3>
+                <p class="audience-item-desc">
+                  For businesses expanding their brands, products, or markets.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 04 -->
+            <div class="audience-list-item">
+              <span class="audience-item-num">04</span>
+              <div class="audience-item-body">
+                <h3 class="audience-item-title">
+                  Creative Businesses
+                  <span class="audience-item-arrow" aria-hidden="true">→</span>
+                </h3>
+                <p class="audience-item-desc">
+                  For teams whose ideas and identity are central to their value.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Thin Editorial Divider -->
+        <div class="origin-thin-rule" style="margin: clamp(56px, 7vw, 84px) 0;" aria-hidden="true"></div>
+
+        <!-- Part 2: Collaborative Advisory -->
+        <div class="collab-grid" id="collaboration">
+
+          <!-- Left: Conversational Philosophy & Statements -->
+          <div class="collab-content">
+            <span class="section-eyebrow" style="margin-bottom: 20px;">Collaborative Advisory</span>
+            
+            <h3 class="collab-heading">
+              The Work Is About The Conversation.
+            </h3>
+
+            <p class="collab-lead">
+              Good decisions often begin with a better conversation. We focus on understanding the context behind an idea, not simply processing a filing.
+            </p>
+
+            <div class="collab-statements">
+              <div class="collab-statement-item">Ask Better Questions.</div>
+              <div class="collab-statement-item">Understand The Context.</div>
+              <div class="collab-statement-item">Make The Next Step Clear.</div>
+            </div>
+          </div>
+
+          <!-- Right: Professional Consultation Editorial Image -->
+          <div class="collab-media-frame">
+            <img src="assets/images/about/collaboration.jpg" alt="Thoughtful professional consultation and collaboration around strategy documents and concept sketches" width="1200" height="800" loading="lazy">
+          </div>
+
+        </div>
+
+        <!-- Thin Editorial Divider -->
+        <div class="origin-thin-rule" style="margin: clamp(56px, 7vw, 84px) 0;" aria-hidden="true"></div>
+
+        <!-- Part 3: Foundational Standards -->
+        <div class="values-wrapper" id="values">
+          <div class="values-header">
+            <span class="section-eyebrow" style="margin-bottom: 16px;">Foundational Standards</span>
+            <h3 class="values-heading">The Principles Behind The Work.</h3>
+          </div>
+
+          <div class="values-list">
+
+            <!-- Row 01 -->
+            <div class="value-band-row">
+              <span class="value-band-num">01</span>
+              <h4 class="value-band-title">Clarity</h4>
+              <p class="value-band-desc">We communicate information in a way that is easier to understand.</p>
+              <span class="value-band-arrow" aria-hidden="true">→</span>
+            </div>
+
+            <!-- Row 02 -->
+            <div class="value-band-row">
+              <span class="value-band-num">02</span>
+              <h4 class="value-band-title">Precision</h4>
+              <p class="value-band-desc">We pay attention to the details that can shape the next step.</p>
+              <span class="value-band-arrow" aria-hidden="true">→</span>
+            </div>
+
+            <!-- Row 03 -->
+            <div class="value-band-row">
+              <span class="value-band-num">03</span>
+              <h4 class="value-band-title">Honesty</h4>
+              <p class="value-band-desc">We avoid exaggerated promises and focus on practical information.</p>
+              <span class="value-band-arrow" aria-hidden="true">→</span>
+            </div>
+
+            <!-- Row 04 -->
+            <div class="value-band-row">
+              <span class="value-band-num">04</span>
+              <h4 class="value-band-title">Perspective</h4>
+              <p class="value-band-desc">We consider the wider business context behind an IP question.</p>
+              <span class="value-band-arrow" aria-hidden="true">→</span>
+            </div>
+
+            <!-- Row 05 -->
+            <div class="value-band-row">
+              <span class="value-band-num">05</span>
+              <h4 class="value-band-title">Progress</h4>
+              <p class="value-band-desc">We focus on helping people understand what they can do next.</p>
+              <span class="value-band-arrow" aria-hidden="true">→</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         SECTION 06 OF 06 — BRAND COMMITMENT & CONSULTATION CTA
+         Brand standard promise, actionable consultation dialog, and closing signoff
+         ====================================================================== -->
+    <section class="about-cta-section" id="cta">
+      <div class="container">
+
+        <!-- Executive Dark Promise Card -->
+        <div class="about-promise-card" id="promise">
+          <span class="section-eyebrow" style="margin-bottom: 24px;">Our Standard</span>
+
+          <h2 class="promise-heading">
+            Make The Next Step Clearer.
+          </h2>
+
+          <p class="promise-desc">
+            That is the standard we aim to bring to every conversation, every question, and every filing decision.
+          </p>
+
+          <div class="promise-signature-mark" aria-label="Brand Mark">
+            IPFORGE
+          </div>
+        </div>
+
+        <!-- Consultation Action Block -->
+        <div class="about-cta-container">
+          <span class="section-eyebrow" style="margin-bottom: 16px;">Start With Clarity</span>
+
+          <h3 class="about-cta-heading">
+            Have An Idea, A Brand, Or An Invention To Discuss?
+          </h3>
+
+          <p class="about-cta-desc">
+            Tell us where you are today. We can help you identify the questions worth considering before you take the next step.
+          </p>
+
+          <div class="about-cta-actions">
+            <button type="button" class="btn btn-primary" data-open-modal="consultation">
+              Book a Consultation →
+            </button>
+            <a href="index.html#services" class="btn btn-secondary">
+              Explore Services →
+            </a>
+          </div>
+
+          <div class="about-cta-meta-line">
+            Trademark • Patent • IP Strategy
+          </div>
+        </div>
+
+        <!-- Final Micro-Statement -->
+        <div class="about-micro-container" style="margin-top: clamp(48px, 6vw, 72px); padding-top: 36px; border-top: 1px solid var(--color-border);" aria-label="Brand Micro-statement">
+          <div class="about-micro-brand">IPFORGE</div>
+          <p class="about-micro-tagline">“Clarity for the ideas behind your business.”</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ======================================================================
+       FOOTER
+       Shared Global Footer exactly matching index.html
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <!-- Top Row: 4 Columns -->
+      <div class="footer-top">
+
+        <!-- Col 01: Brand & Tagline -->
+        <div class="footer-brand-col">
+          <a href="index.html" class="footer-logo-link" aria-label="IPFORGE Homepage">
+            <img src="assets/logo/logo.svg" alt="IPFORGE" class="footer-logo" width="165" height="36">
+          </a>
+          <p class="footer-tagline">
+            Structured guidance for trademark and patent filing decisions. We help businesses protect the ideas, identities, and inventions that move them forward.
+          </p>
+          <div class="footer-social-links" aria-label="Social links">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="IPFORGE on LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="IPFORGE on X (Twitter)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+              </svg>
+            </a>
+            <a href="mailto:contact@ipforge.com" class="social-icon-link" aria-label="Email IPFORGE">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 02: Explore Links -->
+        <div>
+          <span class="footer-col-heading">Explore</span>
+          <ul class="footer-nav-list">
+            <li><a href="index.html" class="footer-nav-link">Home</a></li>
+            <li><a href="about.html" class="footer-nav-link">About</a></li>
+            <li><a href="services.html" class="footer-nav-link">Services</a></li>
+            <li><a href="process.html" class="footer-nav-link">Process &amp; Timeline</a></li>
+            <li><a href="scenarios.html" class="footer-nav-link">Scenarios</a></li>
+            <li><a href="contact.html" class="footer-nav-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 03: IP Services Links -->
+        <div>
+          <span class="footer-col-heading">IP Services</span>
+          <ul class="footer-nav-list">
+            <li><a href="services.html" class="footer-nav-link">Trademark Search</a></li>
+            <li><a href="services.html" class="footer-nav-link">Trademark Filing</a></li>
+            <li><a href="services.html" class="footer-nav-link">Patent Filing</a></li>
+            <li><a href="contact.html" class="footer-nav-link">IP Consultation</a></li>
+            <li><a href="scenarios.html" class="footer-nav-link">IP Strategy</a></li>
+            <li><a href="services.html" class="footer-nav-link">Portfolio Management</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 04: Resources Links -->
+        <div>
+          <span class="footer-col-heading">Resources</span>
+          <ul class="footer-nav-list">
+            <li><a href="scenarios.html" class="footer-nav-link">IP Insights</a></li>
+            <li><a href="about.html" class="footer-nav-link">Trademark Guide</a></li>
+            <li><a href="process.html" class="footer-nav-link">Patent Basics</a></li>
+            <li><a href="index.html#services" class="footer-nav-link">Filing Preparation</a></li>
+            <li><a href="#cta" class="footer-nav-link">Documentation Checklist</a></li>
+            <li><a href="#cta" class="footer-nav-link">FAQs &amp; Guidance</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Thin Horizontal Divider -->
+      <div class="footer-divider"></div>
+
+      <!-- Bottom Bar: Legal & Rights -->
+      <div class="footer-bottom">
+        <div>
+          © 2026 IPFORGE. All rights reserved.
+        </div>
+        <div class="footer-legal-links">
+          <a href="#top" class="footer-legal-link">Privacy Policy</a>
+          <a href="#top" class="footer-legal-link">Terms</a>
+          <a href="#top" class="footer-legal-link">Accessibility</a>
+        </div>
+      </div>
+
+      <!-- Subtle Legal Disclaimer -->
+      <p class="footer-disclaimer">
+        Information provided on this website is for general informational purposes and does not constitute legal advice.
+      </p>
+
+    </div>
+  </footer>
+
+
+  <!-- ======================================================================
+       MODAL — BOOK A CONSULTATION (Accessible Interactive Dialog)
+       ====================================================================== -->
+  <div class="modal-overlay" id="consultationModal" role="dialog" aria-modal="true" aria-labelledby="modalHeading" aria-hidden="true">
+    <div class="modal-window">
+      <button type="button" class="modal-close-btn" aria-label="Close consultation dialog">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <span class="section-eyebrow" style="margin-bottom: 8px;">Direct Advisory</span>
+      <h3 class="modal-title" id="modalHeading">Book an IP Consultation</h3>
+      <p class="modal-desc">
+        Select your objective and share details to review your filing trajectory with our team.
+      </p>
+
+      <form id="consultationForm">
+        <div class="form-group">
+          <label class="form-label" for="modalName">Full Name</label>
+          <input type="text" id="modalName" class="form-input" placeholder="e.g. Katherine Vance" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modalEmail">Business Email</label>
+          <input type="email" id="modalEmail" class="form-input" placeholder="katherine@company.com" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modalServiceType">Filing Objective</label>
+          <select id="modalServiceType" class="form-select" required>
+            <option value="Trademark Search">Trademark Search &amp; Clearance</option>
+            <option value="Trademark Filing">Trademark Filing Preparation</option>
+            <option value="Patent Filing">Patent Documentation &amp; Filing</option>
+            <option value="IP Consultation">Comprehensive IP Consultation</option>
+            <option value="Brand Protection">Brand Protection Roadmap</option>
+            <option value="IP Strategy">Corporate IP Strategy</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modalNotes">Project Summary (Confidential)</label>
+          <textarea id="modalNotes" class="form-textarea" placeholder="Briefly summarize your mark, invention, or current filing stage..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">
+          Request Consultation
+        </button>
+
+        <div class="form-feedback" role="alert"></div>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- Core Scripts -->
+  <script src="js/navigation.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

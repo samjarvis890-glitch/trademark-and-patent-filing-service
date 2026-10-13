@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Trademark &amp; Patent Filing Service | IPFORGE</title>
+  <meta name="description" content="Begin a structured conversation with IPFORGE trademark and patent filing advisors. Submit your inquiry, explore consultation channels, or view our San Francisco headquarters.">
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Contact | Trademark &amp; Patent Filing Service | IPFORGE">
+  <meta property="og:description" content="Begin a structured conversation with IPFORGE trademark and patent filing advisors. Submit your inquiry, explore consultation channels, or view our San Francisco headquarters.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/contact/contact-editorial.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+
+  <!-- Leaflet CSS for Interactive Geographic Map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+
+  <!-- Google Fonts: Playfair Display for Appointment Serif Headline -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+      <script>
+    (function() {
+      try {
+        if (localStorage.getItem('ipforge_theme') === 'dark') {
+          document.documentElement.classList.add('dark-theme');
+          document.addEventListener('DOMContentLoaded', function() {
+            var imgs = document.querySelectorAll('.header-logo img, .footer-brand img, .footer-logo, img.footer-logo');
+            imgs.forEach(function(img) {
+              if (!img.classList.contains('logo-light') && !img.classList.contains('logo-dark')) {
+                img.src = 'assets/logo/logo-dark.svg';
+              }
+            });
+          });
+        }
+        var savedDir = localStorage.getItem('siteDirection');
+        if (savedDir === 'rtl' || savedDir === 'ltr') {
+          document.documentElement.setAttribute('dir', savedDir);
+        } else {
+          document.documentElement.setAttribute('dir', 'ltr');
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ======================================================================
+       HEADER
+       Shared IPFORGE Global Header with Contact item active
+       ====================================================================== -->
+  <header class="site-header" id="top">
+    <div class="container header-container">
+      
+      <!-- Header Left: Logo -->
+      <a href="index.html" class="header-logo" aria-label="IPFORGE Homepage">
+        <img src="assets/logo/logo.svg" alt="IPFORGE Trademark &amp; Patent Filing Service" width="165" height="36">
+      </a>
+
+      <!-- Header Center: Desktop Navigation -->
+      <nav class="header-nav" aria-label="Primary Navigation">
+        <div class="nav-item-dropdown">
+          <button type="button" class="nav-link nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+            <span>Home</span>
+            <svg class="dropdown-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="index.html" class="nav-dropdown-item" role="menuitem">
+              <span>Home 1</span>
+            </a>
+            <a href="home-2.html" class="nav-dropdown-item" role="menuitem">
+              <span>Home 2</span>
+            </a>
+          </div>
+        </div>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="process.html" class="nav-link">Process</a>
+        <a href="scenarios.html" class="nav-link">Scenarios</a>
+        <a href="contact.html" class="nav-link active" aria-current="page">Contact</a>
+      </nav>
+
+      <!-- Header Right: Utility Controls & CTA -->
+      <div class="header-actions">
+        
+        <div class="utility-controls">
+                    <!-- Control 01: Theme Toggle (Light / Dark) -->
+          <div style="position: relative;">
+            <button type="button" class="utility-btn theme-toggle-btn" id="themeToggle" aria-label="Switch to dark theme" title="Switch to dark theme">
+              <!-- Moon Icon for Light Theme (visible by default) -->
+              <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+              <!-- Sun Icon for Dark Theme (visible in dark theme) -->
+              <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+            </button>
+          </div>
+
+                    <!-- Control 02: LTR / RTL Direction Toggle -->
+          <div style="position: relative;">
+            <button type="button" class="utility-btn direction-toggle" id="directionToggle" aria-label="Switch to right-to-left layout" aria-pressed="false" title="Switch to right-to-left layout">
+              <svg class="direction-icon" width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Header CTA Button -->
+        <a href="#contact-form-section" class="btn btn-primary">
+          Book a Consultation
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="mobile-menu-toggle" aria-label="Open mobile navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="hamburger-icon">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </span>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-label="Mobile Navigation">
+    <ul class="mobile-nav-list">
+      <li class="mobile-dropdown-item">
+        <div class="mobile-dropdown-header">
+          <span class="mobile-nav-link">Home</span>
+          <button type="button" class="mobile-submenu-toggle" aria-label="Toggle Home Submenu" aria-expanded="false">
+            <svg width="12" height="8" viewBox="0 0 12 8" fill="none">
+              <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+        <ul class="mobile-subnav-list">
+          <li><a href="index.html" class="mobile-subnav-link">Home 1</a></li>
+          <li><a href="home-2.html" class="mobile-subnav-link">Home 2</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html" class="mobile-nav-link">About</a></li>
+      <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+      <li><a href="process.html" class="mobile-nav-link">Process</a></li>
+      <li><a href="scenarios.html" class="mobile-nav-link">Scenarios</a></li>
+      <li><a href="contact.html" class="mobile-nav-link active" aria-current="page">Contact</a></li>
+    </ul>
+    <!-- Mobile Drawer Actions (Matching Image 3) -->
+    <div class="mobile-drawer-footer">
+      <button type="button" class="mobile-drawer-action-btn theme-toggle-btn mobile-theme-btn" aria-label="Switch to dark theme" title="Switch to dark theme">
+        <span class="mobile-theme-label">DARK MODE</span>
+        <span class="mobile-drawer-btn-icon">
+          <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </span>
+      </button>
+
+      <button type="button" class="mobile-drawer-action-btn direction-toggle mobile-dir-btn" aria-label="Switch to right-to-left layout" aria-pressed="false" title="Switch to right-to-left layout">
+        <span class="mobile-dir-label">RTL VIEW</span>
+        <span class="mobile-drawer-btn-icon">
+          <svg class="direction-icon" width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
+          </svg>
+        </span>
+      </button>
+
+      <a href="#contact-form-section" class="btn btn-primary mobile-drawer-cta">
+        <span>BOOK A CONSULTATION</span>
+      </a>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- ======================================================================
+         SECTION 01 OF 06 — CONTACT INTRODUCTION
+         Large editorial typographic composition (warm off-white background)
+         ====================================================================== -->
+    <section class="contact-intro-section" id="contact-intro" aria-labelledby="intro-heading">
+      <div class="container contact-intro-container">
+        
+        <header class="contact-intro-main">
+          <span class="contact-intro-eyebrow">CONTACT</span>
+          <h1 class="contact-intro-title" id="intro-heading">START WITH THE QUESTION. WE'LL HELP YOU FIND THE NEXT STEP.</h1>
+          <p class="contact-intro-lead">Whether you are preparing a new brand, developing an invention, expanding an existing business, or working through a change, a clear conversation is often the best place to begin.</p>
+          <p class="contact-intro-sub-statement">NO PERFECT BRIEF REQUIRED. JUST A CLEAR STARTING POINT.</p>
+        </header>
+
+        <!-- Editorial Typographic Index Element (Structured geometric line layout, not cards) -->
+        <div class="contact-typographic-index" aria-label="Consultation focus areas">
+          <div class="contact-index-numeral" aria-hidden="true">01</div>
+          <div class="contact-index-divider" aria-hidden="true"></div>
+          <div class="contact-index-labels">
+            <span class="contact-index-tag">BRAND</span>
+            <span class="contact-index-tag">INVENTION</span>
+            <span class="contact-index-tag">CHANGE</span>
+            <span class="contact-index-tag">GROWTH</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 02 OF 06 — APPOINTMENT / CONSULTATION REQUEST
+         Exact Layout & Aesthetics from Sample Image 2:
+         Left: Editorial eyebrow, large serif title, subtext, 3 circular checkmark items
+         Right: Warm blush card with 2-column fields (Name, Email, Phone, Service,
+                Preferred Date, Preferred Time, Description textarea, Pill Submit button)
+         ====================================================================== -->
+    <section class="contact-form-section appt-section" id="contact-form-section" aria-labelledby="form-heading">
+      <div class="container">
+        
+        <div class="appt-layout">
+          
+          <!-- Left Column: Editorial Information & Checklist (Matching Image 2) -->
+          <div class="appt-content-col">
+            <span class="appt-eyebrow">— YOUR APPOINTMENT REQUEST</span>
+            <h2 class="appt-title" id="form-heading"><span style="display: block;">BOOK YOUR</span><span>APPOINTMENT</span></h2>
+            <p class="appt-desc">Tell us a little about what you are looking for and we can help you take the next step.</p>
+            
+            <div class="appt-checklist" role="list">
+              <!-- Item 01 -->
+              <div class="appt-check-item" role="listitem">
+                <span class="appt-check-badge" aria-hidden="true">
+                  <svg width="12" height="10" viewBox="0 0 12 10" fill="none">
+                    <path d="M1.5 5L4.5 8L10.5 2" stroke="#8C4E4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <div class="appt-check-text">
+                  <h3 class="appt-check-title">Tailored IP Consultation</h3>
+                  <p class="appt-check-desc">Every session includes a style consultation to map your trademark or patent filing roadmap.</p>
+                </div>
+              </div>
+
+              <!-- Item 02 -->
+              <div class="appt-check-item" role="listitem">
+                <span class="appt-check-badge" aria-hidden="true">
+                  <svg width="12" height="10" viewBox="0 0 12 10" fill="none">
+                    <path d="M1.5 5L4.5 8L10.5 2" stroke="#8C4E4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <div class="appt-check-text">
+                  <h3 class="appt-check-title">Zero Guesswork</h3>
+                  <p class="appt-check-desc">Not sure yet? Choose 'Not Sure Yet' and our patent and trademark advisors will guide you.</p>
+                </div>
+              </div>
+
+              <!-- Item 03 -->
+              <div class="appt-check-item" role="listitem">
+                <span class="appt-check-badge" aria-hidden="true">
+                  <svg width="12" height="10" viewBox="0 0 12 10" fill="none">
+                    <path d="M1.5 5L4.5 8L10.5 2" stroke="#8C4E4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <div class="appt-check-text">
+                  <h3 class="appt-check-title">Transparent Communication</h3>
+                  <p class="appt-check-desc">Our team connects with you promptly to confirm availability and discuss next steps.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Card Form (Matching Image 2) -->
+          <div class="appt-card">
+            <form id="contactPageForm" novalidate>
+              <div class="appt-form-grid">
+                
+                <!-- Row 1 Col 1: Full Name -->
+                <div class="appt-field-group">
+                  <label for="contactName" class="appt-field-label">FULL NAME *</label>
+                  <input type="text" id="contactName" name="name" class="appt-field-input" placeholder="e.g. Eleanor Vance" required aria-required="true">
+                  <span class="appt-field-error" role="alert">Please provide your full name</span>
+                </div>
+
+                <!-- Row 1 Col 2: Email Address -->
+                <div class="appt-field-group">
+                  <label for="contactEmail" class="appt-field-label">EMAIL ADDRESS *</label>
+                  <input type="email" id="contactEmail" name="email" class="appt-field-input" placeholder="eleanor@example.com" required aria-required="true">
+                  <span class="appt-field-error" role="alert">Please provide a valid email address</span>
+                </div>
+
+                <!-- Row 2 Col 1: Phone Number -->
+                <div class="appt-field-group">
+                  <label for="contactPhone" class="appt-field-label">PHONE NUMBER *</label>
+                  <input type="tel" id="contactPhone" name="phone" class="appt-field-input" placeholder="e.g. +1 (555) 019-2834" required aria-required="true">
+                  <span class="appt-field-error" role="alert">Please provide your phone number</span>
+                </div>
+
+                <!-- Row 2 Col 2: Desired Service -->
+                <div class="appt-field-group">
+                  <label for="contactService" class="appt-field-label">DESIRED SERVICE *</label>
+                  <select id="contactService" name="service" class="appt-field-select" required aria-required="true">
+                    <option value="" disabled selected>Select a Service</option>
+                    <option value="Trademark Search & Filing">Trademark Search &amp; Filing</option>
+                    <option value="Patent Preparation & Filing">Patent Preparation &amp; Filing</option>
+                    <option value="Comprehensive Clearance">Comprehensive Clearance</option>
+                    <option value="Office Action Response">Office Action Response</option>
+                    <option value="IP Strategy & Consultation">IP Strategy &amp; Consultation</option>
+                    <option value="Not Sure Yet">Not Sure Yet</option>
+                  </select>
+                  <span class="appt-field-error" role="alert">Please select a service</span>
+                </div>
+
+                <!-- Row 3 Col 1: Preferred Date -->
+                <div class="appt-field-group">
+                  <label for="contactDate" class="appt-field-label">PREFERRED DATE *</label>
+                  <input type="date" id="contactDate" name="date" class="appt-field-input" required aria-required="true">
+                  <span class="appt-field-error" role="alert">Please select a preferred date</span>
+                </div>
+
+                <!-- Row 3 Col 2: Preferred Time -->
+                <div class="appt-field-group">
+                  <label for="contactTime" class="appt-field-label">PREFERRED TIME *</label>
+                  <select id="contactTime" name="timeSlot" class="appt-field-select" required aria-required="true">
+                    <option value="" disabled selected>Select Time Slot</option>
+                    <option value="Morning (09:00 - 12:00)">Morning (09:00 - 12:00)</option>
+                    <option value="Afternoon (12:00 - 15:00)">Afternoon (12:00 - 15:00)</option>
+                    <option value="Late Afternoon (15:00 - 18:00)">Late Afternoon (15:00 - 18:00)</option>
+                    <option value="Flexible / Any Time">Flexible / Any Time</option>
+                  </select>
+                  <span class="appt-field-error" role="alert">Please select a preferred time slot</span>
+                </div>
+
+                <!-- Row 4 Full Width: Describe your desired look or questions -->
+                <div class="appt-field-group full-width">
+                  <label for="contactMessage" class="appt-field-label">DESCRIBE YOUR DESIRED LOOK OR QUESTIONS</label>
+                  <textarea id="contactMessage" name="message" class="appt-field-textarea" placeholder="Tell us about your preferences, natural lashes, or any questions you have..."></textarea>
+                </div>
+
+                <!-- Row 5 Full Width: Submit Button -->
+                <div class="full-width">
+                  <button type="submit" class="appt-submit-btn">
+                    REQUEST APPOINTMENT
+                  </button>
+                  <div id="contactFormFeedback" class="appt-form-feedback" role="alert"></div>
+                </div>
+
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 03 OF 06 — WHAT TO TELL US
+         Large horizontal editorial checklist / intake sheet (4 structured items)
+         ====================================================================== -->
+    <section class="contact-intake-section" id="what-to-tell-us" aria-labelledby="intake-heading">
+      <div class="container">
+        
+        <div class="intake-layout-grid">
+          
+          <!-- Left: Large Vertical Indicator -->
+          <div class="intake-vertical-indicator">
+            <span class="intake-indicator-num" aria-hidden="true">03</span>
+            <h2 class="intake-indicator-label" id="intake-heading">WHAT HELPS</h2>
+          </div>
+
+          <!-- Right: Structured Intake List (Exactly 4 items with balanced content) -->
+          <div class="intake-items-list" role="list">
+            
+            <!-- Item 01 -->
+            <div class="intake-sheet-row" role="listitem">
+              <span class="intake-row-num">01</span>
+              <h3 class="intake-row-title">THE IDEA</h3>
+              <p class="intake-row-desc">Tell us what you are building, naming, developing, or preparing to bring to market.</p>
+              <span class="intake-row-prompt">WHAT IS TAKING SHAPE?</span>
+            </div>
+
+            <!-- Item 02 -->
+            <div class="intake-sheet-row" role="listitem">
+              <span class="intake-row-num">02</span>
+              <h3 class="intake-row-title">THE STAGE</h3>
+              <p class="intake-row-desc">Let us know whether the idea is early, already in use, being developed, or ready for the next step.</p>
+              <span class="intake-row-prompt">WHERE ARE YOU NOW?</span>
+            </div>
+
+            <!-- Item 03 -->
+            <div class="intake-sheet-row" role="listitem">
+              <span class="intake-row-num">03</span>
+              <h3 class="intake-row-title">THE CHANGE</h3>
+              <p class="intake-row-desc">If something has changed, explain what is different from the situation you started with.</p>
+              <span class="intake-row-prompt">WHAT HAS SHIFTED?</span>
+            </div>
+
+            <!-- Item 04 -->
+            <div class="intake-sheet-row" role="listitem">
+              <span class="intake-row-num">04</span>
+              <h3 class="intake-row-title">THE QUESTION</h3>
+              <p class="intake-row-desc">Describe the main point you want clarified so the conversation can begin with useful context.</p>
+              <span class="intake-row-prompt">WHAT DO YOU WANT TO KNOW?</span>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Dedicated Gemini Editorial Visual Banner -->
+        <div class="intake-media-wrapper">
+          <img src="assets/images/contact/contact-editorial.jpg" alt="Refined intellectual property consultation workspace with open notebook, planning documents, and precision instruments" class="intake-media-img" width="1600" height="700" loading="lazy">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 04 OF 06 — CONTACT CHANNELS
+         Horizontal contact directory (3 wide horizontal rows, no floating cards)
+         ====================================================================== -->
+    <section class="contact-channels-section" id="contact-channels" aria-labelledby="channels-heading">
+      <div class="container">
+        
+        <header class="channels-header-block">
+          <h2 class="scenario-section-heading" id="channels-heading">CONTACT CHANNELS</h2>
+          <p class="scenario-section-intro">Choose the communication pathway that best suits your requirements, documentation, and timing.</p>
+        </header>
+
+        <!-- Exactly 3 Wide Horizontal Directory Rows -->
+        <div class="channels-directory-list">
+          
+          <!-- Row 01 -->
+          <a href="mailto:contact@ipforge.com" class="channel-row">
+            <span class="channel-row-num">01</span>
+            <h3 class="channel-row-title">EMAIL</h3>
+            <p class="channel-row-desc">For detailed enquiries, documents, background information, or questions that are easier to explain in writing.</p>
+            <span class="channel-row-action">SEND AN EMAIL →</span>
+          </a>
+
+          <!-- Row 02 -->
+          <a href="tel:+18005550198" class="channel-row">
+            <span class="channel-row-num">02</span>
+            <h3 class="channel-row-title">PHONE</h3>
+            <p class="channel-row-desc">For conversations where a direct discussion is more useful than a written introduction.</p>
+            <span class="channel-row-action">CALL THE TEAM →</span>
+          </a>
+
+          <!-- Row 03 -->
+          <a href="#contact-form-section" class="channel-row">
+            <span class="channel-row-num">03</span>
+            <h3 class="channel-row-title">CONTACT FORM</h3>
+            <p class="channel-row-desc">For a structured first enquiry, use the form above and give us a short overview of your situation.</p>
+            <span class="channel-row-action">GO TO THE FORM ↑</span>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 05 OF 06 — VISIBLE LOCATION MAP
+         65% Real Map / 35% Location Information (Leaflet + OpenStreetMap)
+         ====================================================================== -->
+    <section class="contact-map-section" id="location-map" aria-labelledby="map-heading">
+      <div class="container">
+        
+        <div class="contact-map-layout">
+          
+          <!-- Location Information Column (35%) -->
+          <div class="contact-location-info">
+            <span class="contact-loc-eyebrow">FIND US</span>
+            <h2 class="contact-loc-heading" id="map-heading">A PLACE TO START THE CONVERSATION.</h2>
+            
+            <div class="contact-address-card">
+              <h3 class="contact-address-name">IPFORGE Intellectual Property Practice</h3>
+              <div class="contact-address-lines">
+                <span class="address-line">100 Montgomery Street, Suite 1800</span>
+                <span class="address-line">San Francisco, CA 94104</span>
+                <span class="address-line">United States</span>
+              </div>
+              <div class="contact-address-meta">
+                <span>USPTO &amp; INTERNATIONAL FILING COORDINATION</span>
+              </div>
+            </div>
+
+            <a href="https://www.openstreetmap.org/?mlat=37.7909&amp;mlon=-122.4016#map=16/37.7909/-122.4016" class="contact-directions-link" target="_blank" rel="noopener noreferrer">
+              <span>GET DIRECTIONS →</span>
+            </a>
+          </div>
+
+          <!-- Real Interactive Geographic Map (65%) -->
+          <div class="contact-map-frame" aria-label="Interactive map showing IPFORGE headquarters at 100 Montgomery Street, San Francisco">
+            <div id="contactMap"></div>
+            <!-- Accessible Fallback iframe if scripts are unavailable -->
+            <noscript>
+              <iframe 
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-122.4056%2C37.7885%2C-122.3976%2C37.7933&amp;layer=mapnik&amp;marker=37.7909%2C-122.4016" 
+                style="width: 100%; height: 100%; min-height: 440px; border: none;" 
+                title="Geographic map of IPFORGE office location">
+              </iframe>
+            </noscript>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 06 OF 06 — BEFORE YOU SEND / FINAL CONTACT ACTION
+         Two-layer closing composition (4 checklist items + dark statement layer)
+         ====================================================================== -->
+    <section class="contact-closing-section" id="before-you-send" aria-labelledby="closing-heading">
+      
+      <!-- Top Layer: Editorial Checklist -->
+      <div class="container closing-top-layer">
+        
+        <header class="closing-checklist-header">
+          <span class="scenario-label-tag">BEFORE YOU SEND</span>
+          <h2 class="scenario-section-heading" id="closing-heading">A FEW THINGS ARE ENOUGH.</h2>
+        </header>
+
+        <!-- Exactly 4 Short Checklist Items with Balanced Content -->
+        <div class="closing-checklist-grid">
+          
+          <!-- Item 01 -->
+          <div class="closing-checklist-item">
+            <span class="closing-item-num">01</span>
+            <h3 class="closing-item-title">YOUR CURRENT SITUATION</h3>
+            <p class="closing-item-desc">A brief overview of your business, active brand name, or technical development status.</p>
+          </div>
+
+          <!-- Item 02 -->
+          <div class="closing-checklist-item">
+            <span class="closing-item-num">02</span>
+            <h3 class="closing-item-title">WHAT YOU ARE WORKING TOWARD</h3>
+            <p class="closing-item-desc">Your target filing date, commercial launch schedule, or international expansion goal.</p>
+          </div>
+
+          <!-- Item 03 -->
+          <div class="closing-checklist-item">
+            <span class="closing-item-num">03</span>
+            <h3 class="closing-item-title">WHAT HAS CHANGED</h3>
+            <p class="closing-item-desc">Any recent adjustments in ownership, branding identity, or product specifications.</p>
+          </div>
+
+          <!-- Item 04 -->
+          <div class="closing-checklist-item">
+            <span class="closing-item-num">04</span>
+            <h3 class="closing-item-title">THE QUESTION YOU WANT ANSWERED</h3>
+            <p class="closing-item-desc">The key point of procedural or filing clarity you need to determine the next step.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Bottom Layer: Dark Deep-Navy Statement Layer -->
+      <div class="closing-bottom-layer">
+        <div class="container">
+          <div class="closing-statement-content">
+            <h2 class="closing-statement-title">YOU DO NOT NEED TO HAVE EVERYTHING FIGURED OUT BEFORE YOU REACH OUT.</h2>
+            <p class="closing-statement-desc">Start with the situation in front of you. A clearer conversation can begin from there.</p>
+            <div class="closing-statement-actions">
+              <a href="#contact-form-section" class="closing-action-primary">START A CONVERSATION →</a>
+              <a href="#top" class="closing-action-secondary">BACK TO TOP ↑</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       FOOTER
+       Shared Global Footer exactly matching index.html
+       ====================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      
+      <!-- Top 4 Columns -->
+      <div class="footer-top">
+        
+        <!-- Col 01: Brand Identity -->
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo" aria-label="IPFORGE Home">
+            <img src="assets/logo/logo.svg" alt="IPFORGE Logo" width="160" height="35">
+          </a>
+          <p class="footer-tagline">
+            PROTECTING IDEAS.<br>
+            CLARIFYING THE NEXT STEP.
+          </p>
+          <p class="footer-desc">
+            Structured support for trademark and patent filing decisions, designed around clarity, precision, and practical progress.
+          </p>
+          <div class="footer-social-row">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile">
+              <svg viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram Profile">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 02: Explore Links -->
+        <div>
+          <span class="footer-col-heading">Explore</span>
+          <ul class="footer-nav-list">
+            <li><a href="index.html" class="footer-nav-link">Home</a></li>
+            <li><a href="about.html" class="footer-nav-link">About</a></li>
+            <li><a href="services.html" class="footer-nav-link">Services</a></li>
+            <li><a href="process.html" class="footer-nav-link">Process &amp; Timeline</a></li>
+            <li><a href="scenarios.html" class="footer-nav-link">Scenarios</a></li>
+            <li><a href="contact.html" class="footer-nav-link active">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 03: IP Services Links -->
+        <div>
+          <span class="footer-col-heading">IP Services</span>
+          <ul class="footer-nav-list">
+            <li><a href="services.html#trademark-services" class="footer-nav-link">Trademark Search</a></li>
+            <li><a href="services.html#trademark-services" class="footer-nav-link">Trademark Filing</a></li>
+            <li><a href="services.html#patent-services" class="footer-nav-link">Patent Filing</a></li>
+            <li><a href="contact.html" class="footer-nav-link">IP Consultation</a></li>
+            <li><a href="scenarios.html" class="footer-nav-link">IP Strategy</a></li>
+            <li><a href="services.html" class="footer-nav-link">Portfolio Management</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 04: Resources Links -->
+        <div>
+          <span class="footer-col-heading">Resources</span>
+          <ul class="footer-nav-list">
+            <li><a href="scenarios.html" class="footer-nav-link">IP Insights</a></li>
+            <li><a href="about.html" class="footer-nav-link">Trademark Guide</a></li>
+            <li><a href="process.html" class="footer-nav-link">Patent Basics</a></li>
+            <li><a href="services.html#search-preparation" class="footer-nav-link">Filing Preparation</a></li>
+            <li><a href="contact.html" class="footer-nav-link">Documentation Checklist</a></li>
+            <li><a href="contact.html" class="footer-nav-link">FAQs &amp; Guidance</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Thin Horizontal Divider -->
+      <div class="footer-divider"></div>
+
+      <!-- Bottom Bar: Legal & Rights -->
+      <div class="footer-bottom">
+        <div>
+          © 2026 IPFORGE. All rights reserved.
+        </div>
+        <div class="footer-legal-links">
+          <a href="#top" class="footer-legal-link">Privacy Policy</a>
+          <a href="#top" class="footer-legal-link">Terms</a>
+          <a href="#top" class="footer-legal-link">Accessibility</a>
+        </div>
+      </div>
+
+      <!-- Subtle Legal Disclaimer -->
+      <p class="footer-disclaimer">
+        Information provided on this website is for general informational purposes and does not constitute legal advice.
+      </p>
+
+    </div>
+  </footer>
+
+  <!-- Leaflet Map JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <!-- Site Application Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

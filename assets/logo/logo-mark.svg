@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none">
+  <!-- IPFORGE Monogram Symbol: Interlocking geometric I + P -->
+  <rect width="48" height="48" rx="10" fill="#0B1F33" />
+  <!-- Precision grid accent -->
+  <path d="M12 12H36V36H12V12Z" stroke="#1769AA" stroke-opacity="0.25" stroke-width="1" stroke-dasharray="2 2" />
+  <!-- I Stem -->
+  <rect x="14" y="13" width="5.5" height="22" rx="1.5" fill="#FFFFFF" />
+  <!-- Top Bridge & P Upper Bowl -->
+  <path d="M19.5 13H27C31.4183 13 35 16.3579 35 20.5C35 24.6421 31.4183 28 27 28H19.5V23H26.5C28.1569 23 29.5 21.8807 29.5 20.5C29.5 19.1193 28.1569 18 26.5 18H19.5V13Z" fill="#2C8DB8" />
+  <!-- Inner precision core accent -->
+  <circle cx="25.5" cy="20.5" r="2" fill="#FFFFFF" />
+  <!-- Subtle protection bevel corner -->
+  <path d="M30 33L35 35L33 30" stroke="#2C8DB8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

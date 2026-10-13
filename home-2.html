@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trademark &amp; Patent Strategy | IPFORGE</title>
+  <meta name="description" content="Explore a clearer approach to trademark and patent decisions with IPFORGE, from brand protection and invention planning to filing preparation.">
+  
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Trademark &amp; Patent Strategy | IPFORGE">
+  <meta property="og:description" content="Explore a clearer approach to trademark and patent decisions with IPFORGE, from brand protection and invention planning to filing preparation.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/home-2/hero-strategy.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+      <script>
+    (function() {
+      try {
+        if (localStorage.getItem('ipforge_theme') === 'dark') {
+          document.documentElement.classList.add('dark-theme');
+          document.addEventListener('DOMContentLoaded', function() {
+            var imgs = document.querySelectorAll('.header-logo img, .footer-brand img, .footer-logo, img.footer-logo');
+            imgs.forEach(function(img) {
+              if (!img.classList.contains('logo-light') && !img.classList.contains('logo-dark')) {
+                img.src = 'assets/logo/logo-dark.svg';
+              }
+            });
+          });
+        }
+        var savedDir = localStorage.getItem('siteDirection');
+        if (savedDir === 'rtl' || savedDir === 'ltr') {
+          document.documentElement.setAttribute('dir', savedDir);
+        } else {
+          document.documentElement.setAttribute('dir', 'ltr');
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ======================================================================
+       HEADER (Shared Component with index.html)
+       ====================================================================== -->
+  <header class="site-header" id="top">
+    <div class="container header-container">
+      
+      <!-- Header Left: Logo -->
+      <a href="index.html" class="header-logo" aria-label="IPFORGE Homepage">
+        <img src="assets/logo/logo.svg" alt="IPFORGE Trademark &amp; Patent Filing Service" width="165" height="36">
+      </a>
+
+      <!-- Header Center: Desktop Navigation -->
+      <nav class="header-nav" aria-label="Primary Navigation">
+        <div class="nav-item-dropdown">
+          <button type="button" class="nav-link nav-dropdown-toggle active" aria-expanded="false" aria-haspopup="true">
+            <span>Home</span>
+            <svg class="dropdown-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="index.html" class="nav-dropdown-item" role="menuitem">
+              <span>Home 1</span>
+            </a>
+            <a href="home-2.html" class="nav-dropdown-item active" role="menuitem">
+              <span>Home 2</span>
+            </a>
+          </div>
+        </div>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="process.html" class="nav-link">Process</a>
+        <a href="scenarios.html" class="nav-link">Scenarios</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header Right: Utility Controls & CTA -->
+      <div class="header-actions">
+        
+        <div class="utility-controls">
+                    <!-- Control 01: Theme Toggle (Light / Dark) -->
+          <div style="position: relative;">
+            <button type="button" class="utility-btn theme-toggle-btn" id="themeToggle" aria-label="Switch to dark theme" title="Switch to dark theme">
+              <!-- Moon Icon for Light Theme (visible by default) -->
+              <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+              <!-- Sun Icon for Dark Theme (visible in dark theme) -->
+              <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+            </button>
+          </div>
+
+                    <!-- Control 02: LTR / RTL Direction Toggle -->
+          <div style="position: relative;">
+            <button type="button" class="utility-btn direction-toggle" id="directionToggle" aria-label="Switch to right-to-left layout" aria-pressed="false" title="Switch to right-to-left layout">
+              <svg class="direction-icon" width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Consultation Header CTA -->
+        <a href="contact.html#contact-form-section" class="btn btn-primary"><span>BOOK A CONSULTATION</span></a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="mobile-menu-toggle" aria-label="Open mobile navigation menu" aria-expanded="false">
+          <span class="hamburger-icon">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </span>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-label="Mobile Navigation">
+    <ul class="mobile-nav-list">
+      <li class="mobile-dropdown-item">
+        <div class="mobile-dropdown-header">
+          <span class="mobile-nav-link active">Home</span>
+          <button type="button" class="mobile-submenu-toggle" aria-label="Toggle Home Submenu" aria-expanded="true">
+            <svg width="12" height="8" viewBox="0 0 12 8" fill="none">
+              <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+        <ul class="mobile-subnav-list open">
+          <li><a href="index.html" class="mobile-subnav-link">Home 1</a></li>
+          <li><a href="home-2.html" class="mobile-subnav-link active">Home 2</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html" class="mobile-nav-link">About</a></li>
+      <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+      <li><a href="#matrix" class="mobile-nav-link">Process</a></li>
+      <li><a href="#preparation" class="mobile-nav-link">Preparation</a></li>
+      <li><a href="#consultation" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <!-- Mobile Drawer Actions (Matching Image 3) -->
+    <div class="mobile-drawer-footer">
+      <button type="button" class="mobile-drawer-action-btn theme-toggle-btn mobile-theme-btn" aria-label="Switch to dark theme" title="Switch to dark theme">
+        <span class="mobile-theme-label">DARK MODE</span>
+        <span class="mobile-drawer-btn-icon">
+          <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </span>
+      </button>
+
+      <button type="button" class="mobile-drawer-action-btn direction-toggle mobile-dir-btn" aria-label="Switch to right-to-left layout" aria-pressed="false" title="Switch to right-to-left layout">
+        <span class="mobile-dir-label">RTL VIEW</span>
+        <span class="mobile-drawer-btn-icon">
+          <svg class="direction-icon" width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
+          </svg>
+        </span>
+      </button>
+
+      <a href="contact.html#contact-form-section" class="btn btn-primary mobile-drawer-cta">
+        <span>BOOK A CONSULTATION</span>
+      </a>
+    </div>
+  </div>
+
+
+  <main id="mainContent">
+
+    <!-- ======================================================================
+         SECTION 01 OF 06 — STRATEGIC HERO
+         Full-width editorial hero with large background image and dark overlay
+         ====================================================================== -->
+    <section class="hero-strategy" id="hero" aria-labelledby="heroHeadline">
+      <img src="assets/images/home-2/hero-strategy.jpg" alt="Executive workspace for intellectual property strategy with architectural and technical models" class="hero-strategy-bg" width="1920" height="1080">
+      <div class="hero-strategy-overlay"></div>
+      
+      <div class="container hero-strategy-container">
+        <div class="hero-strategy-content">
+          <span class="hero-strategy-eyebrow">IP STRATEGY FOR WHAT COMES NEXT</span>
+          <h1 class="hero-strategy-headline" id="heroHeadline">
+            BUILD THE BUSINESS.<br>
+            PROTECT THE THINKING BEHIND IT.
+          </h1>
+          <p class="hero-strategy-desc">
+            Your brand, invention, and ideas can become valuable business assets. Start by understanding how intellectual property fits into the bigger picture.
+          </p>
+          <div class="hero-strategy-ctas">
+            <a href="contact.html#contact-form-section" class="btn-hero-primary">START A CONSULTATION</a>
+            <a href="#positioning" class="btn-hero-secondary">
+              UNDERSTAND YOUR OPTIONS
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         SECTION 02 OF 06 — IP VALUE / BUSINESS POSITIONING
+         Large editorial statement with vertical typographic composition
+         ====================================================================== -->
+    <section class="ip-value-section" id="positioning" aria-labelledby="ipValueHeadline">
+      <div class="container">
+        <div class="ip-value-grid">
+          
+          <div class="ip-value-content">
+            <span class="ip-value-eyebrow">THE VALUE BEHIND THE PAPERWORK</span>
+            <h2 class="ip-value-headline" id="ipValueHeadline">
+              INTELLECTUAL PROPERTY IS MORE THAN A FILING.
+            </h2>
+            <p class="ip-value-lead">
+              A trademark can shape how customers recognize your business. A patent can support the value of an invention. The first step is understanding what you are building and what deserves attention.
+            </p>
+
+            <div class="ip-value-breakdown" aria-label="Core Pillars of Intellectual Property">
+              <div class="ip-breakdown-row">
+                <span class="ip-breakdown-num">01</span>
+                <span class="ip-breakdown-label">BRAND</span>
+              </div>
+              <div class="ip-breakdown-row">
+                <span class="ip-breakdown-num">02</span>
+                <span class="ip-breakdown-label">INVENTION</span>
+              </div>
+              <div class="ip-breakdown-row">
+                <span class="ip-breakdown-num">03</span>
+                <span class="ip-breakdown-label">BUSINESS VALUE</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="ip-value-visual">
+            <div class="ip-value-image-frame">
+              <img src="assets/images/home-2/brand-identity.jpg" alt="Refined brand strategy environment with abstract packaging, materials, and typography studies" width="800" height="1000" loading="lazy">
+              <div class="ip-value-image-badge">Strategic Asset Framing</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         SECTION 03 OF 06 — BRAND VS INVENTION
+         Dramatic split-screen section: Trademark Thinking vs Patent Thinking
+         ====================================================================== -->
+    <section class="brand-invention-section" id="comparison" aria-labelledby="brandVsInventionHeading">
+      <div class="container">
+        <h2 id="brandVsInventionHeading" class="visually-hidden">Strategic Comparison: Trademark vs Patent</h2>
+        
+        <div class="split-panels-wrapper">
+          
+          <!-- LEFT PANEL: TRADEMARK THINKING -->
+          <article class="split-panel split-panel-brand">
+            <span class="split-panel-eyebrow">TRADEMARK THINKING</span>
+            <h3 class="split-panel-heading">TRUST THE IDENTITY</h3>
+            <p class="split-panel-body">
+              Your name, symbol, or brand identity can become one of the most recognizable assets in your business.
+            </p>
+
+            <div class="split-panel-tags" aria-label="Trademark Focus Areas">
+              <span class="split-tag">Recognition</span>
+              <span class="split-tag">Distinctiveness</span>
+              <span class="split-tag">Brand identity</span>
+            </div>
+
+            <a href="contact.html#contact-form-section" class="split-panel-cta">EXPLORE TRADEMARK SUPPORT &rarr;</a>
+          </article>
+
+          <!-- RIGHT PANEL: PATENT THINKING -->
+          <article class="split-panel split-panel-patent">
+            <span class="split-panel-eyebrow">PATENT THINKING</span>
+            <h3 class="split-panel-heading">PROTECT THE INVENTION</h3>
+            <p class="split-panel-body">
+              An invention can begin as an idea, but understanding its technical and filing considerations can shape what happens next.
+            </p>
+
+            <div class="split-panel-visual">
+              <img src="assets/images/home-2/innovation-lab.jpg" alt="Modern product innovation laboratory with precision components and engineering drafts" width="800" height="480" loading="lazy">
+            </div>
+
+            <div class="split-panel-tags" aria-label="Patent Focus Areas">
+              <span class="split-tag">Innovation</span>
+              <span class="split-tag">Technical detail</span>
+              <span class="split-tag">Patent preparation</span>
+            </div>
+
+            <a href="contact.html#contact-form-section" class="split-panel-cta">EXPLORE PATENT SUPPORT &rarr;</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         SECTION 04 OF 06 — IP DECISION MATRIX
+         Strategic 3-column table/matrix visual
+         ====================================================================== -->
+    <section class="matrix-section" id="matrix" aria-labelledby="matrixHeading">
+      <div class="container">
+        
+        <div class="matrix-header-group">
+          <span class="matrix-eyebrow">DECISION FRAMEWORK</span>
+          <h2 class="matrix-heading" id="matrixHeading">WHICH QUESTION COMES FIRST?</h2>
+          <p class="matrix-subtext">
+            Before thinking about filing, clarify what you are protecting, where the value sits, and what information needs attention.
+          </p>
+        </div>
+
+        <div class="matrix-table" role="table" aria-label="IP Decision Matrix">
+          
+          <div class="matrix-thead-row" role="row">
+            <span role="columnheader">QUESTION</span>
+            <span role="columnheader">WHAT IT REVEALS</span>
+            <span role="columnheader">WHY IT MATTERS</span>
+          </div>
+
+          <!-- Row 01 -->
+          <div class="matrix-row" role="row">
+            <div class="matrix-cell-q" role="cell">
+              <span class="matrix-cell-q-bullet" aria-hidden="true"></span>
+              <span>WHAT ARE YOU BUILDING?</span>
+            </div>
+            <div class="matrix-cell-reveal" role="cell">
+              <span class="matrix-mobile-label">What It Reveals:</span>
+              <span>Brand, product, invention, or business asset</span>
+            </div>
+            <div class="matrix-cell-matter" role="cell">
+              <span class="matrix-mobile-label">Why It Matters:</span>
+              <span>Defines the starting point</span>
+            </div>
+          </div>
+
+          <!-- Row 02 -->
+          <div class="matrix-row" role="row">
+            <div class="matrix-cell-q" role="cell">
+              <span class="matrix-cell-q-bullet" aria-hidden="true"></span>
+              <span>WHAT NEEDS PROTECTION?</span>
+            </div>
+            <div class="matrix-cell-reveal" role="cell">
+              <span class="matrix-mobile-label">What It Reveals:</span>
+              <span>Identity, technical innovation, or both</span>
+            </div>
+            <div class="matrix-cell-matter" role="cell">
+              <span class="matrix-mobile-label">Why It Matters:</span>
+              <span>Shapes the protection path</span>
+            </div>
+          </div>
+
+          <!-- Row 03 -->
+          <div class="matrix-row" role="row">
+            <div class="matrix-cell-q" role="cell">
+              <span class="matrix-cell-q-bullet" aria-hidden="true"></span>
+              <span>WHERE WILL IT MATTER?</span>
+            </div>
+            <div class="matrix-cell-reveal" role="cell">
+              <span class="matrix-mobile-label">What It Reveals:</span>
+              <span>Current market or future expansion</span>
+            </div>
+            <div class="matrix-cell-matter" role="cell">
+              <span class="matrix-mobile-label">Why It Matters:</span>
+              <span>Helps frame strategic priorities</span>
+            </div>
+          </div>
+
+          <!-- Row 04 -->
+          <div class="matrix-row" role="row">
+            <div class="matrix-cell-q" role="cell">
+              <span class="matrix-cell-q-bullet" aria-hidden="true"></span>
+              <span>WHAT INFORMATION EXISTS?</span>
+            </div>
+            <div class="matrix-cell-reveal" role="cell">
+              <span class="matrix-mobile-label">What It Reveals:</span>
+              <span>Existing research, documents, or technical material</span>
+            </div>
+            <div class="matrix-cell-matter" role="cell">
+              <span class="matrix-mobile-label">Why It Matters:</span>
+              <span>Identifies preparation gaps</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         SECTION 05 OF 06 — RESEARCH, PREPARATION & CLARITY
+         Image-led Diligence Stages + Interactive Myth/Reality Accordion
+         ====================================================================== -->
+    <section class="preparation-section" id="preparation" aria-labelledby="prepHeading">
+      <div class="container">
+        
+        <!-- Diligence Top Banner -->
+        <div class="preparation-hero-banner">
+          <img src="assets/images/home-2/research.jpg" alt="Intellectual property research desk with technical drafts, organized dossiers, magnifying glass and precision tools" width="1920" height="880" loading="lazy">
+        </div>
+
+        <div class="preparation-header">
+          <span class="preparation-eyebrow">DILIGENCE &amp; READINESS</span>
+          <h2 class="preparation-heading" id="prepHeading">BETTER PREPARATION STARTS EARLIER.</h2>
+          <p class="preparation-subtext">
+            Good filing decisions are easier when the relevant information has been considered before the application stage.
+          </p>
+        </div>
+
+        <!-- Three Horizontal Stages -->
+        <div class="preparation-stages-grid" aria-label="Preparation Stages">
+          
+          <div class="preparation-stage-card">
+            <span class="stage-num">01</span>
+            <h3 class="stage-title">COLLECT</h3>
+            <p class="stage-desc">
+              Bring together the information surrounding your brand or invention.
+            </p>
+          </div>
+
+          <div class="preparation-stage-card">
+            <span class="stage-num">02</span>
+            <h3 class="stage-title">REVIEW</h3>
+            <p class="stage-desc">
+              Identify the important questions and potential gaps.
+            </p>
+          </div>
+
+          <div class="preparation-stage-card">
+            <span class="stage-num">03</span>
+            <h3 class="stage-title">PREPARE</h3>
+            <p class="stage-desc">
+              Move toward the next stage with a clearer information set.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Integrated Myth vs Reality Interactive Accordion -->
+        <div style="margin-top: 80px; padding-top: 60px; border-top: 1px solid var(--color-border);">
+          <div class="myth-header">
+            <span class="myth-eyebrow">PERSPECTIVE &amp; CLARITY</span>
+            <h2 class="myth-heading" id="mythsHeading">A CLEARER VIEW OF IP DECISIONS.</h2>
+          </div>
+
+          <div class="myth-accordion" role="region" aria-label="Myth and Reality Accordion">
+            
+            <!-- Row 01 -->
+            <div class="myth-accordion-item">
+              <button type="button" class="myth-header-btn" aria-expanded="false" aria-controls="collapseMyth1" id="headingMyth1">
+                <span class="myth-index-num">01</span>
+                <div class="myth-statement-wrap">
+                  <span class="myth-badge">MYTH</span>
+                  <span class="myth-text">&ldquo;Filing is the first thing to think about.&rdquo;</span>
+                </div>
+                <span class="myth-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="myth-collapse" id="collapseMyth1" role="region" aria-labelledby="headingMyth1">
+                <div class="myth-reality-body">
+                  <span class="reality-badge">REALITY</span>
+                  <p class="reality-text">
+                    Understanding what you are protecting and gathering relevant information can come first.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 02 -->
+            <div class="myth-accordion-item">
+              <button type="button" class="myth-header-btn" aria-expanded="false" aria-controls="collapseMyth2" id="headingMyth2">
+                <span class="myth-index-num">02</span>
+                <div class="myth-statement-wrap">
+                  <span class="myth-badge">MYTH</span>
+                  <span class="myth-text">&ldquo;A business only needs IP once it becomes large.&rdquo;</span>
+                </div>
+                <span class="myth-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="myth-collapse" id="collapseMyth2" role="region" aria-labelledby="headingMyth2">
+                <div class="myth-reality-body">
+                  <span class="reality-badge">REALITY</span>
+                  <p class="reality-text">
+                    IP considerations can become relevant while a business is still developing its identity or innovation.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 03 -->
+            <div class="myth-accordion-item">
+              <button type="button" class="myth-header-btn" aria-expanded="false" aria-controls="collapseMyth3" id="headingMyth3">
+                <span class="myth-index-num">03</span>
+                <div class="myth-statement-wrap">
+                  <span class="myth-badge">MYTH</span>
+                  <span class="myth-text">&ldquo;A trademark and a patent protect the same thing.&rdquo;</span>
+                </div>
+                <span class="myth-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="myth-collapse" id="collapseMyth3" role="region" aria-labelledby="headingMyth3">
+                <div class="myth-reality-body">
+                  <span class="reality-badge">REALITY</span>
+                  <p class="reality-text">
+                    They address different types of intellectual property and serve different strategic purposes.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 04 -->
+            <div class="myth-accordion-item">
+              <button type="button" class="myth-header-btn" aria-expanded="false" aria-controls="collapseMyth4" id="headingMyth4">
+                <span class="myth-index-num">04</span>
+                <div class="myth-statement-wrap">
+                  <span class="myth-badge">MYTH</span>
+                  <span class="myth-text">&ldquo;The process should feel impossible to understand.&rdquo;</span>
+                </div>
+                <span class="myth-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="myth-collapse" id="collapseMyth4" role="region" aria-labelledby="headingMyth4">
+                <div class="myth-reality-body">
+                  <span class="reality-badge">REALITY</span>
+                  <p class="reality-text">
+                    Breaking the process into clear questions can make the next step more manageable.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         SECTION 06 OF 06 — CONSULTATION & COMMITMENT
+         Centered Consultation Panel + Concluding Strategic Editorial Statement
+         ====================================================================== -->
+    <section class="consultation-panel-section" id="consultation" aria-labelledby="consultPanelHeading">
+      <div class="container">
+        
+        <div class="consultation-panel-card">
+          
+          <!-- Decorative geometric IPFORGE monogram pattern SVG -->
+          <svg class="consultation-monogram-pattern" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="50" cy="50" r="45" stroke="#0B1F33" stroke-width="0.8" stroke-dasharray="2 3"/>
+            <circle cx="50" cy="50" r="32" stroke="#0B1F33" stroke-width="0.6"/>
+            <polygon points="50,15 85,50 50,85 15,50" stroke="#0B1F33" stroke-width="0.8"/>
+            <line x1="50" y1="15" x2="50" y2="85" stroke="#0B1F33" stroke-width="0.5"/>
+            <line x1="15" y1="50" x2="85" y2="50" stroke="#0B1F33" stroke-width="0.5"/>
+          </svg>
+
+          <div class="consultation-panel-inner">
+            <span class="consultation-panel-eyebrow">START WITH A CONVERSATION</span>
+            <h2 class="consultation-panel-heading" id="consultPanelHeading">
+              NOT SURE WHERE TO BEGIN?
+            </h2>
+            <p class="consultation-panel-desc">
+              Tell us what you're building, protecting, or preparing for. We'll help you identify the questions worth asking next.
+            </p>
+            <div class="consultation-panel-actions">
+              <button type="button" class="btn btn-primary" data-open-modal="consultation">
+                BOOK A CONSULTATION &rarr;
+              </button>
+              <a href="#comparison" class="btn btn-secondary">
+                VIEW SERVICES &rarr;
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Concluding Editorial Statement within Section 06 -->
+        <div style="margin-top: 64px; text-align: center;">
+          <div class="editorial-rule"></div>
+          
+          <div class="editorial-statement-inner">
+            <h3 class="editorial-huge-statement">
+              IDEAS CREATE VALUE.<br>
+              PROTECTION HELPS IT ENDURE.
+            </h3>
+            <p class="editorial-subtext">
+              IPFORGE provides structured support for businesses navigating trademark and patent filing decisions.
+            </p>
+            <button type="button" class="editorial-cta-btn" data-open-modal="consultation">
+              START THE CONVERSATION &rarr;
+            </button>
+          </div>
+
+          <div class="editorial-rule"></div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ======================================================================
+       FOOTER
+       Matches reference structure: 4 columns, elegant rhythm, warm white
+       ====================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      
+      <!-- Top 4 Columns -->
+      <div class="footer-top">
+        
+        <!-- Col 01: Brand Identity -->
+        <div class="footer-brand">
+          <a href="#top" class="footer-logo" aria-label="IPFORGE Home">
+            <img src="assets/logo/logo.svg" alt="IPFORGE Logo" width="160" height="35">
+          </a>
+          <p class="footer-tagline">
+            PROTECTING IDEAS.<br>
+            CLARIFYING THE NEXT STEP.
+          </p>
+          <p class="footer-desc">
+            Structured support for trademark and patent filing decisions, designed around clarity, precision, and practical progress.
+          </p>
+          <div class="footer-social-row">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile">
+              <svg viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram Profile">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 02: Explore Links -->
+        <div>
+          <span class="footer-col-heading">Explore</span>
+          <ul class="footer-nav-list">
+            <li><a href="#top" class="footer-nav-link">Home</a></li>
+            <li><a href="about.html" class="footer-nav-link">About</a></li>
+            <li><a href="services.html" class="footer-nav-link">Services</a></li>
+            <li><a href="process.html" class="footer-nav-link">Process &amp; Timeline</a></li>
+            <li><a href="scenarios.html" class="footer-nav-link">Scenarios</a></li>
+            <li><a href="contact.html" class="footer-nav-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 03: IP Services Links -->
+        <div>
+          <span class="footer-col-heading">IP Services</span>
+          <ul class="footer-nav-list">
+            <li><a href="services.html#trademark-services" class="footer-nav-link">Trademark Search</a></li>
+            <li><a href="services.html#trademark-services" class="footer-nav-link">Trademark Filing</a></li>
+            <li><a href="services.html#patent-services" class="footer-nav-link">Patent Filing</a></li>
+            <li><a href="contact.html" class="footer-nav-link">IP Consultation</a></li>
+            <li><a href="scenarios.html" class="footer-nav-link">IP Strategy</a></li>
+            <li><a href="services.html" class="footer-nav-link">Portfolio Management</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 04: Resources Links -->
+        <div>
+          <span class="footer-col-heading">Resources</span>
+          <ul class="footer-nav-list">
+            <li><a href="scenarios.html" class="footer-nav-link">IP Insights</a></li>
+            <li><a href="about.html" class="footer-nav-link">Trademark Guide</a></li>
+            <li><a href="process.html" class="footer-nav-link">Patent Basics</a></li>
+            <li><a href="#services" class="footer-nav-link">Filing Preparation</a></li>
+            <li><a href="#consultation" class="footer-nav-link">Documentation Checklist</a></li>
+            <li><a href="#consultation" class="footer-nav-link">FAQs &amp; Guidance</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Thin Horizontal Divider -->
+      <div class="footer-divider"></div>
+
+      <!-- Bottom Bar: Legal & Rights -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 IPFORGE. All rights reserved.
+        </div>
+        <div class="footer-legal-links">
+          <a href="#top" class="footer-legal-link">Privacy Policy</a>
+          <a href="#top" class="footer-legal-link">Terms</a>
+          <a href="#top" class="footer-legal-link">Accessibility</a>
+        </div>
+      </div>
+
+      <!-- Subtle Legal Disclaimer -->
+      <p class="footer-disclaimer">
+        Information provided on this website is for general informational purposes and does not constitute legal advice.
+      </p>
+
+    </div>
+  </footer>
+
+
+  <!-- ======================================================================
+       MODAL — BOOK A CONSULTATION (Shared Dialog Component)
+       ====================================================================== -->
+  <div class="modal-overlay" id="consultationModal" role="dialog" aria-modal="true" aria-labelledby="modalHeading" aria-hidden="true">
+    <div class="modal-window">
+      <button type="button" class="modal-close-btn" aria-label="Close consultation dialog">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <span class="section-eyebrow" style="margin-bottom: 8px;">Direct Advisory</span>
+      <h3 class="modal-title" id="modalHeading">Book an IP Consultation</h3>
+      <p class="modal-desc">
+        Select your objective and share details to review your filing trajectory with our team.
+      </p>
+
+      <form id="consultationForm">
+        <div class="form-group">
+          <label class="form-label" for="modalName">Full Name</label>
+          <input type="text" id="modalName" class="form-input" placeholder="e.g. Katherine Vance" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modalEmail">Business Email</label>
+          <input type="email" id="modalEmail" class="form-input" placeholder="katherine@company.com" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modalServiceType">Filing Objective</label>
+          <select id="modalServiceType" class="form-select" required>
+            <option value="Trademark Search">Trademark Search &amp; Clearance</option>
+            <option value="Trademark Filing">Trademark Filing Preparation</option>
+            <option value="Patent Filing">Patent Documentation &amp; Filing</option>
+            <option value="IP Consultation">Comprehensive IP Consultation</option>
+            <option value="Brand Protection">Brand Protection Roadmap</option>
+            <option value="IP Strategy">Corporate IP Strategy</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modalNotes">Project Summary (Confidential)</label>
+          <textarea id="modalNotes" class="form-textarea" placeholder="Briefly summarize your mark, invention, or current filing stage..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">
+          Request Consultation
+        </button>
+
+        <div class="form-feedback" role="alert"></div>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- Core Scripts -->
+  <script src="js/navigation.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
